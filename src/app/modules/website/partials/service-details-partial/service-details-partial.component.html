@@ -1,0 +1,108 @@
+<section class="services-details">
+  <div class="container">
+    <div class="row">
+      <!--Start Services Details Sidebar-->
+      <div class="col-xl-4 col-lg-8">
+        <div class="services-details__sidebar">
+          <div
+            class="services-details__services-list-box wow fadeInUp animated"
+            data-wow-delay="0.0s"
+            data-wow-duration="1200ms"
+          >
+            <h3 class="services-details__sidebar-title">
+              {{ data.title1 }}
+            </h3>
+            <ul class="services-details__services-list list-unstyled">
+              <!-- Data -->
+              <li *ngFor="let item of services">
+                <a
+                  [innerHtml]="item.title"
+                  routerLink="/medical-investments/{{ item.slug }}"
+                >
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </li>
+              <!-- Data -->
+            </ul>
+          </div>
+          <div
+            class="services-details__services-conatct-box wow fadeInUp animated"
+            data-wow-delay="0.1s"
+            data-wow-duration="1200ms"
+          >
+            <h3 class="services-details__sidebar-title">{{ data.title2 }}</h3>
+            <form id="review-form">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-box">
+                    <input
+                      type="email"
+                      name="email"
+                      [placeholder]="data.email"
+                      required=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-box">
+                    <textarea
+                      name="review"
+                      [placeholder]="data.message"
+                      required=""
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a
+                    routerLink="/"
+                    class="thm-btn btn-cta mt-3"
+                    style="width: 100%"
+                    >{{ data.cta1 }}</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- <div
+            class="services-details__services-brochures-box wow fadeInUp animated"
+            data-wow-delay="0.3s"
+            data-wow-duration="1200ms"
+          >
+            <h2 class="services-details__sidebar-title">Brochures</h2>
+            <div class="brochures-btn">
+              <a href="#" class="button"
+                >Download Doc<span class="icon-download icon"></span
+              ></a>
+            </div>
+            <div class="brochures-btn">
+              <a href="#" class="button"
+                >Download Pdf<span class="icon-pdf-file icon"></span
+              ></a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!--End Services Details Sidebar-->
+      <!--Start Services Details Content-->
+      <div class="col-xl-8">
+        <div
+          class="services-details-content"
+          *ngFor="let item of servicedetails"
+        >
+          <div class="services-details__text-box1">
+            <h2 [innerHtml]="item.subtitle"></h2>
+          </div>
+          <div [innerHtml]="item.htmltext"></div>
+          <div class="cta-btn mt-5">
+            <a routerLink="/" class="thm-btn btn-cta2"> {{ data.cta2 }} </a>
+          </div>
+        </div>
+      </div>
+      <!--End Services Details Content-->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "icon":"assets/images/resources/counter-v1-img1.png",
+        "title":"Saticfied Clients",
+        "value":356
+    },
+    {
+        "id":2,
+        "icon":"assets/images/resources/counter-v1-img2.png",
+        "title":"Project Complate",
+        "value":784
+    },
+    {
+        "id":3,
+        "icon":"assets/images/resources/counter-v1-img3.png",
+        "title":"Support Team",
+        "value":963
+    }
+]

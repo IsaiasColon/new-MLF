@@ -1,0 +1,322 @@
+[
+    {
+        "id":1,
+        "name":"Michael J. Behne",
+        "post":"CEO & Founder",
+        "image":"assets/images/team/team-one-img-1.jpg",
+        "shapeimg":"assets/images/team/team-v2-img1.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":2,
+        "name":"Seymour Pounders",
+        "post":"Senior Manager",
+        "image":"assets/images/team/team-one-img-2.jpg",
+        "shapeimg":"assets/images/team/team-v2-img2.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":3,
+        "name":"Susan F. Burgess",
+        "post":"Junior Marketing",
+        "image":"assets/images/team/team-one-img-3.jpg",
+        "shapeimg":"assets/images/team/team-v2-img3.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":4,
+        "name":"Douglas B. Robinson",
+        "post":"Managing Director",
+        "image":"assets/images/team/team-one-img-4.jpg",
+        "shapeimg":"assets/images/team/team-v2-img4.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":5,
+        "name":"Delmer H. Harrison",
+        "post":"Senior Consultant",
+        "image":"assets/images/team/team-one-img-5.jpg",
+        "shapeimg":"assets/images/team/team-v2-img1.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":6,
+        "name":"Michael R. Spencer",
+        "post":"Senior Manager",
+        "image":"assets/images/team/team-one-img-6.jpg",
+        "shapeimg":"assets/images/team/team-v2-img2.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":7,
+        "name":"Matthew B. Thomas",
+        "post":"Junior Marketing",
+        "image":"assets/images/team/team-one-img-7.jpg",
+        "shapeimg":"assets/images/team/team-v2-img3.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    },
+    {
+        "id":8,
+        "name":"Gary R. Anderson",
+        "post":"Managing Director",
+        "image":"assets/images/team/team-one-img-8.jpg",
+        "shapeimg":"assets/images/team/team-v2-img4.png",
+        "information":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore verit quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspe aut odit aut fugit sed quia consequuntur",
+        "social":[
+            {
+                "icon":"fab fa-facebook",
+                "title":"Facebook",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "title":"Twitter",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-youtube",
+                "title":"Youtube",
+                "url":"/"
+            },
+            {
+                "icon":"fab fa-behance",
+                "title":"Behance",
+                "url":"/"
+            }
+        ],
+        "skills":[
+            {
+                "title":"Business Strategy",
+                "value":78
+            },
+            {
+                "title":"Career Development",
+                "value":96
+            }
+        ]
+    }
+]

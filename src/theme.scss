@@ -1,0 +1,148 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-darkslateblue: #004482;
+    --color-white: #fff;
+    --color-yellow: #C09C00;
+
+    /* border radiuses */
+    --br-5xs: 8px;
+}
+
+.section-blue {
+    position: relative;
+    display: block;
+    background: #ebf3fc;
+    padding: 50px 0 50px 0;
+    z-index: 3;
+}
+
+.section-blue .section-title {
+    margin-bottom: 30px;
+}
+
+// START BOX COMPONENT
+
+.box-000001 {
+    background-color: #004482;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+    font-size: 18px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: 350px;
+    min-width: 300px;
+    padding: 30px 25px 30px 25px;
+    text-align: center;
+    width: 90%;
+}
+
+.box-000001 .title {
+    margin-top: 10px;    
+}
+
+.box-000001 .cta {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.box-000001 .cta:hover {
+    background-color: white;
+    color: #004482;
+}
+
+// END BOX COMPONENT
+
+
+// START INFO BOX COMPONENT
+
+.group-parent {
+    max-width: 350px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: #000;
+    font-family: var(--font-inter);
+    background-color: var(--color-white);
+    padding: 70px 25px 30px 25px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.box-info-title, .box-info-subtitle {
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.box-info-title {
+    text-align: center;
+    display: inline-block;
+}
+
+.box-info-title a {
+    font-size: var(--font-size-base);
+    line-height: 27px;
+    font-weight: 500;
+    color: #496068;
+}
+  
+.group-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-blue {
+    background-color: var(--color-darkslateblue);
+}
+
+.icon-yellow {
+    background-color: var(--color-yellow);
+}
+
+.icon-location {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+    width: 60px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+
+// END INFO BOX COMPONENT
+  
+  
+  
+  
+  

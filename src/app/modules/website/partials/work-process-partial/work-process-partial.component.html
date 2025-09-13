@@ -1,0 +1,58 @@
+<section class="services-three clearfix">
+  <div class="container">
+    <div class="section-title text-center">
+      <div class="section-title__tagline">
+        <span class="left"></span>
+        <h4>{{ data.subtitle }}</h4>
+        <span class="right"></span>
+      </div>
+      <h2 class="section-title__title">
+        {{ data.title }}
+      </h2>
+    </div>
+    <div class="row">
+      <!--Start Single Services Three-->
+      <div
+        class="col-xl-4 col-lg-4 col-md-12 col-sm-12"
+        *ngFor="let item of cards | slice : 0 : 3"
+      >
+        <div class="services-three__single">
+          <div class="services-three__single-icon">
+            <span [class]="item.icon"></span>
+          </div>
+          <div class="services-three__single-inner">
+            <div
+              class="services-three__single-bg-layer"
+              [style.background-image]="
+                'url(assets/images/services/services-v3-img1.jpg)'
+              "
+            ></div>
+            <h3 class="services-three__single-title">
+              <a routerLink="/about">{{ item.title }}</a>
+            </h3>
+            <p class="services-three__single-text">{{ item.text }}</p>
+            <div class="services-three__single__btn-box">
+              <div class="services-three__single-btn">
+                <a routerLink="/about"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="services-three__single-overly-btn">
+                <a routerLink="/about" class="thm-btn about-three-btn"
+                  >Learn More<i
+                    class="fa fa-angle-double-right"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="services-three__single-icon-layer">
+            <span [class]="item.icon"></span>
+          </div>
+        </div>
+      </div>
+      <!--End Single Services Three-->
+    </div>
+  </div>
+</section>

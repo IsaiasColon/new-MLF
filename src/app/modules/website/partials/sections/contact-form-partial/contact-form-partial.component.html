@@ -1,0 +1,196 @@
+<section
+  class="case-studies-two"
+  id="contact_form"
+  [style.padding-bottom]="padding_bottom"
+  [style.background-color]="background_color"
+  *ngIf="!!data"
+>
+  <div
+    class="container contact-form"
+    [style.background-color]="background_color"
+  >
+    <div class="row text-center mb-5">
+      <div class="section-title col-10 offset-1">
+        <div class="section-title__tagline">
+          <span class="left"></span>
+          <h4>{{ data.subtitle }}</h4>
+        </div>
+        <h2 class="section-title__title services-section mb-4">
+          {{ data.title }}
+        </h2>
+        <p class="services-section">
+          {{ data.text1 }}
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="row"
+      style="background-color: #ebf3fc; height: 600px; border-radius: 15px"
+    >
+      <div class="col-xl-6 col-lg-12 col-12 px-xl-5">
+        <div class="row mt-2">
+          <div class="col-xl-6 col-md-6 col-sm-6 col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.name">{{ data.fields.name }}</label>
+              <input
+                type="text"
+                class="form-control form-input"
+                [id]="data.fields.name"
+                [placeholder]="data.fields.name"
+                [(ngModel)]="body.name"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-6 col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.email">{{ data.fields.email }}</label>
+              <input
+                type="text"
+                class="form-control form-input"
+                [id]="data.fields.email"
+                [placeholder]="data.fields.email"
+                [(ngModel)]="body.email"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-6 col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.phone">{{ data.fields.phone }}</label>
+              <input
+                type="text"
+                class="form-control form-input"
+                [id]="data.fields.phone"
+                [placeholder]="data.fields.phone"
+                [(ngModel)]="body.phone_number"
+              />
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-md-6 col-sm-6 col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.service">{{
+                data.fields.service
+              }}</label>
+              <select
+                name="services"
+                id="services"
+                class="form-control form-input"
+                [(ngModel)]="body.subject"
+              >
+                <option [value]="null">{{ data.fields.select }}</option>
+                <option
+                  *ngFor="let service of data.services"
+                  [id]="data.fields.service"
+                  [value]="service.id"
+                >
+                  {{ service.name }}
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.date">{{ data.fields.date }}</label>
+              <input
+                type="datetime-local"
+                class="form-control form-input"
+                [id]="data.fields.date"
+                [placeholder]="data.fields.date"
+                [(ngModel)]="body.date"
+                [min]="minDate"
+              />
+            </div>
+          </div>
+
+          <div class="col-12 mt-4">
+            <div class="form-group">
+              <label [for]="data.fields.message">{{
+                data.fields.message
+              }}</label>
+              <textarea
+                type="text"
+                class="form-control form-input"
+                [id]="data.fields.message"
+                [placeholder]="data.fields.message"
+                rows="2"
+                style="max-height: 140px"
+                [(ngModel)]="body.message"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <re-captcha
+            id="recaptcha"
+            name="recaptcha"
+            [(ngModel)]="recaptchaReactive"
+            (resolved)="checkCaptcha($event)"
+            required
+          ></re-captcha>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12 mt-3">
+            <div class="form-group">
+              <div class="button">
+                <button
+                  (click)="sendMessage()"
+                  class="thm-btn btn-cta2 btn-block"
+                >
+                  {{ data.cta1 }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-xl-6 col-lg-12 col-12 contact-info-col"
+        style="position: relative"
+      >
+        <div
+          class="form-img"
+          style="
+            background-image: url('assets/mlf/img/contact-form/image.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: -35px;
+          "
+        ></div>
+        <div
+          class="form-info"
+          style="position: absolute; top: 300px; right: -35px"
+        >
+          <div class="item1">
+            <img
+              src="assets/mlf/img/icons/whatsapp.png"
+              alt="WhatsApp"
+              class="icon"
+            />
+
+            <div class="text1">{{ data.title1 }}</div>
+            <a (click)="cta('#bot')">
+              <div class="text2">+1 (850) 339-3849</div>
+            </a>
+          </div>
+          <div class="item2">
+            <img src="assets/mlf/img/icons/mail.png" alt="Mail" class="icon" />
+            <div class="text1">{{ data.title2 }}</div>
+            <div class="text2">info@licenciasmedica.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ngx-loading
+  [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"
+></ngx-loading>

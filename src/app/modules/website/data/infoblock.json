@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "title":"Let’s Ready to Get<br>Work Together",
+        "image":"assets/images/resources/info-v1-img1.png",
+        "btntext":"Join Now",
+        "link":"/career"
+    },
+    {
+        "id":2,
+        "title":"Request To Call Back<br>We Will Call!",
+        "image":"assets/images/resources/info-v1-img2.png",
+        "btntext":"Get A Quote",
+        "link":"/contact"
+    },
+    {
+        "id":3,
+        "title":"Build A Better Career<br>With Conbiz",
+        "image":"assets/images/resources/info-v1-img3.png",
+        "btntext":"View Jobs",
+        "link":"/career"
+    }
+]

@@ -1,0 +1,47 @@
+<section
+  class="cta-one cta-one--cta-two jarallax bg-fixed"
+  [style.background-image]="'url(assets/mlf/img/pictures/cta3.png)'"
+>
+  <div class="container">
+    <div class="row" style="padding: 15px">
+      <div class="col-xl-12">
+        <div class="cta-one__wrapper">
+          <div class="section-title">
+            <div class="section-title__tagline">
+              <span class="left"></span>
+              <h4 [innerHTML]="data.subtitle"></h4>
+              <span class="right"></span>
+            </div>
+            <h2 class="section-title__title" [innerHTML]="data.title"></h2>
+            <p [innerHTML]="data.text"></p>
+          </div>
+          <div class="row" style="text-align: center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 offset-lg-2">
+              <div class="cta-one__btn-box">
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta('#bot')"
+                  class="thm-btn btn-cta"
+                  [innerHTML]="data.cta1"
+                >
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+              <div class="cta-one__btn-box btn-video-box">
+                <a
+                  class="thm-btn btn-cta"
+                  [innerHTML]="data.cta2"
+                  target="_blank"
+                  [href]="data.video_url"
+                >
+                  <i class="fa fa-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

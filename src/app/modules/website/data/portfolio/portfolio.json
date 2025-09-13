@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Marketing Planning",
+        "image": "assets/images/resources/case-studies-v1-img5.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img11.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img6.jpg",
+            "assets/images/resources/case-studies-v1-img7.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            1,
+            2
+        ],
+        "client": [
+            1
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    },
+    {
+        "id": 2,
+        "title": "Program Management",
+        "image": "assets/images/resources/case-studies-v1-img6.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img12.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img7.jpg",
+            "assets/images/resources/case-studies-v1-img8.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            3,
+            4
+        ],
+        "client": [
+            2
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    },
+    {
+        "id": 3,
+        "title": "IT Management",
+        "image": "assets/images/resources/case-studies-v1-img7.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img13.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img8.jpg",
+            "assets/images/resources/case-studies-v1-img9.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            5,
+            6
+        ],
+        "client": [
+            3
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    },
+    {
+        "id": 4,
+        "title": "Growth Business",
+        "image": "assets/images/resources/case-studies-v1-img8.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img16.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img9.jpg",
+            "assets/images/resources/case-studies-v1-img10.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            1,
+            2
+        ],
+        "client": [
+            4
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    },
+    {
+        "id": 5,
+        "title": "Co - Working Space",
+        "image": "assets/images/resources/case-studies-v1-img9.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img14.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img10.jpg",
+            "assets/images/resources/case-studies-v1-img5.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            3,
+            4
+        ],
+        "client": [
+            5
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    },
+    {
+        "id": 6,
+        "title": "IT Management",
+        "image": "assets/images/resources/case-studies-v1-img10.jpg",
+        "masonryimage": "assets/images/resources/case-studies-v1-img15.jpg",
+        "gallery":[
+            "assets/images/resources/case-studies-v1-img5.jpg",
+            "assets/images/resources/case-studies-v1-img6.jpg"
+        ],
+        "shorttext": "Digital business consulting Agency",
+        "category": [
+            5,
+            6
+        ],
+        "client": [
+            6
+        ],
+        "projectdate": "20 June 2021",
+        "htmltext": "<p class='letter-caps'> Quis autem vel eum iure reprehenderit quiin voluptate velit esse quam nihil molestiae consequatur, vel illum solorem eum fugiat quo voluptas nulla pariatur laudantium totam rem aperquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud ium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p><blockquote>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system expound the actual teachings of great explorer of the truth, the master-builder of human happiness</blockquote><p>Voluptatem accusantium doloremque laud totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatvitae dicta sunt explicabo.</p>"
+    }
+]

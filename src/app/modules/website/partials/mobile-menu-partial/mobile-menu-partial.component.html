@@ -1,0 +1,124 @@
+<div class="logo-box">
+  <a routerLink="/" aria-label="logo image"
+    ><img src="assets/mlf/img/logo-small-bg.png" width="155" alt="img"
+  /></a>
+</div>
+<!-- /.logo-box -->
+<div class="mobile-nav__container">
+  <ul class="main-menu__list">
+    <li
+      [ngClass]="item.child == true ? 'dropdown' : ''"
+      *ngFor="let item of navigation"
+    >
+      <a
+        href="javascript:void(0)"
+        (click)="trigger(item)"
+        *ngIf="item.child"
+        [ngClass]="item.open ? 'expanded' : ''"
+        routerLink="{{ item.link }}"
+        >{{ item.linkText
+        }}<button
+          aria-label="dropdown toggler"
+          [ngClass]="item.open ? 'expanded' : ''"
+        >
+          <i class="fa fa-angle-down"></i></button
+      ></a>
+      <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
+        item.linkText
+      }}</a>
+      <ul
+        class="sub-menu"
+        *ngIf="item.child"
+        [ngClass]="item.open ? 'd-block' : ''"
+      >
+        <li
+          [ngClass]="item.child == true ? 'dropdown' : ''"
+          *ngFor="let item of item.submenu"
+        >
+          <a
+            href="javascript:void(0)"
+            (click)="trigger(item)"
+            *ngIf="item.child"
+            [ngClass]="item.open ? 'expanded' : ''"
+            >{{ item.linkText
+            }}<button
+              aria-label="dropdown toggler"
+              [ngClass]="item.open ? 'expanded' : ''"
+            >
+              <i class="fa fa-angle-down"></i></button
+          ></a>
+          <a routerLink="{{ item.link }}">{{ item.linkText }}</a>
+          <ul
+            class="sub-menu"
+            *ngIf="item.child"
+            [ngClass]="item.open ? 'd-block' : ''"
+          >
+            <li *ngFor="let item of item.submenu">
+              <a routerLink="{{ item.link }}">{{ item.linkText }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li *ngIf="currentLang === 'en'" class="dropdown">
+      <a href="javascript:void(0)" (click)="setLang('es')">
+        SPANISH - ESPAÑOL
+        <span class="nav_arrow"></span
+      ></a>
+    </li>
+
+    <li *ngIf="currentLang === 'es'" class="dropdown">
+      <a href="javascript:void(0)" (click)="setLang('en')">
+        ENGLISH - INGLÉS
+        <span class="nav_arrow"></span
+      ></a>
+    </li>
+  </ul>
+</div>
+<!-- /.mobile-nav__container -->
+<ul class="mobile-nav__contact list-unstyled">
+  <li>
+    <i class="icon-phone-call"></i>
+  </li>
+  <!-- <li>
+    <a href="mailto:lilia.waldero@licenciasmedica.com"
+      >lilia.waldero@licenciasmedica.com</a
+    >
+  </li> -->
+  <li>
+    <i class="icon-letter"></i>
+    <a href="tel:850-339-3849">+1 (850) 339 3849</a>
+  </li>
+</ul>
+<!-- /.mobile-nav__contact -->
+<div class="mobile-nav__top">
+  <div class="mobile-nav__social">
+    <a
+      href="https://www.facebook.com/medicalicensefactory"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="fab fa-facebook-square"
+    ></a>
+    <a
+      href="https://www.instagram.com/medicalicensefactory/"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="fab fa-instagram"
+    ></a>
+    <a
+      href="https://www.linkedin.com/company/medicalicensefactory/"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="fab fa-linkedin"
+    ></a>
+    <a
+      href="https://www.youtube.com/@medicallicensefactoryllc3411"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="fab fa-youtube"
+    ></a>
+  </div>
+  <!-- /.mobile-nav__social -->
+</div>
+<!-- /.mobile-nav__top -->

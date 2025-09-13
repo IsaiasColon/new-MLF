@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "icon": "icon-pin",
+    "title": "Our Location",
+    "text": "<p>354 Oakridge, Camden <br>NJ 08102 - USA</p>",
+    "style": ""
+  },
+  {
+    "id": 2,
+    "icon": "icon-letter",
+    "title": "Email Address",
+    "text": "<p><a href='mailto:example@example.com'>example@example.com</a></p> <p><a href='mailto:example@example.com'>www.example.net</a></p>",
+    "style": "style2"
+  },
+  {
+    "id": 3,
+    "icon": "icon-phone-call",
+    "title": "Phone Number",
+    "text": "<p><a href='123456789'>+012 (345) 678 99</a></p> <p><a href='tel:123456789'>+8563214</a></p>",
+    "style": "style3"
+  }
+]

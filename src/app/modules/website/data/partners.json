@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/brand/partner-logo1.png"
+    },
+    {
+        "id":2,
+        "image":"assets/images/brand/partner-logo2.png"
+    },
+    {
+        "id":3,
+        "image":"assets/images/brand/partner-logo3.png"
+    },
+    {
+        "id":4,
+        "image":"assets/images/brand/partner-logo4.png"
+    }
+]

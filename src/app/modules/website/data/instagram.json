@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/resources/footer-instagram-img1.jpg"
+    },
+    {
+        "id":2,
+        "image":"assets/images/resources/footer-instagram-img2.jpg"
+    },
+    {
+        "id":3,
+        "image":"assets/images/resources/footer-instagram-img3.jpg"
+    },
+    {
+        "id":4,
+        "image":"assets/images/resources/footer-instagram-img4.jpg"
+    },
+    {
+        "id":5,
+        "image":"assets/images/resources/footer-instagram-img5.jpg"
+    },
+    {
+        "id":6,
+        "image":"assets/images/resources/footer-instagram-img6.jpg"
+    }
+]

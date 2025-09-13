@@ -1,0 +1,67 @@
+<section class="case-studies-two">
+  <div class="container">
+    <div class="row">
+      <div class="offset-lg-3 col-lg-6 col-12">
+        <div class="section-title text-center">
+          <div class="section-title__tagline">
+            <span class="left"></span>
+            <h4>{{ data.subtitle }}</h4>
+            <span class="right"></span>
+          </div>
+
+          <h2 class="section-title__title mb-4">
+            {{ data.title }}
+          </h2>
+          <p>
+            {{ data.text1 }}
+          </p>
+          <div *ngIf="_router.url !== '/services'" class="cta-one__btn-box">
+            <a routerLink="/services" class="thm-btn btn-cta mt-4 mb-2">
+              {{ data.cta1 }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="case-studies-two__wrapper">
+          <div class="row">
+            <!--Start Single Case Studies Two-->
+            <div
+              class="col-xl-6 col-lg-6 col-md-12 col-sm-12"
+              *ngFor="let item of services"
+            >
+              <div class="case-studies-two__single">
+                <div
+                  class="case-studies-two__single-text-box"
+                  [style.background]="item.backgroud_color"
+                  style="min-height: 300px"
+                >
+                  <div
+                    class="case-studies-two__single-left"
+                    [style.color]="item.color"
+                  >
+                    <h2 [style.color]="item.color">{{ item.title }}</h2>
+                    <p style="margin-bottom: 15px">{{ item.shorttext }}</p>
+                    <a href="javascript:void(0)" [routerLink]="item.route">
+                      {{ item.cta1 }}
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="case-studies-two__single-right"></div>
+                </div>
+                <div class="case-studies-two__single-img">
+                  <img [src]="item.image" [alt]="item.title" />
+                  <img [src]="item.icon" [alt]="item.title" class="icon" />
+                </div>
+              </div>
+            </div>
+            <!--End Single Case Studies Two-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

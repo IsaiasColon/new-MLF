@@ -1,0 +1,38 @@
+<section class="features-three features-three--about">
+  <div class="features-three__content-box">
+    <div class="container">
+      <div *ngIf="!!data" class="section-title text-center">
+        <div class="section-title__tagline">
+          <span class="left"></span>
+          <h4>{{ data.subtitle }}</h4>
+          <span class="right"></span>
+        </div>
+        <h2 class="section-title__title">
+          {{ data.title }}
+        </h2>
+      </div>
+      <div class="row">
+        <!--Start Single Features Three-->
+        <div [class]="item.col" *ngFor="let item of cards">
+          <div class="features-three__single text-center">
+            <div class="features-three__single-icon">
+              <img [src]="item.icon" [alt]="item.title" />
+            </div>
+            <h4 class="features-three__single-title">
+              <a [routerLink]="item.route">{{ item.title }}</a>
+            </h4>
+            <p class="features-three__single-text">
+              {{ item.shorttext }}
+            </p>
+            <div class="features-three__single-btn">
+              <a [routerLink]="item.route"
+                ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--End Single Features Three-->
+      </div>
+    </div>
+  </div>
+</section>

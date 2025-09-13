@@ -1,0 +1,30 @@
+<section class="why-choose-one">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7 col-md-7 col-12">
+        <div class="why-choose-one__content">
+          <div class="section-title">
+            <div class="section-title__tagline">
+              <span class="left"></span>
+              <h4 [innerHtml]="short_title"></h4>
+            </div>
+            <h2 class="section-title__title" [innerHtml]="title"></h2>
+          </div>
+          <ul class="why-choose-one__list list-unstyled">
+            <p [innerHtml]="info"></p>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="col-xl-5 col-lg-5 col-md-5 col-12 wow slideInRight"
+        data-wow-delay="500ms"
+        data-wow-duration="2500ms"
+        style="text-align: center"
+      >
+        <div class="why-choose-one__img">
+          <img [src]="image" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

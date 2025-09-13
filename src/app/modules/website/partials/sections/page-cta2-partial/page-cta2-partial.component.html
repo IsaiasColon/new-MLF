@@ -1,0 +1,29 @@
+<section
+  class="cta-one cta-one--cta-two jarallax bg-fixed"
+  [style.background-image]="'url(assets/mlf/img/cta/cta-bg.jpg)'"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="cta-one--cta-two__wrapper">
+          <div class="cta-one__wrapper">
+            <div class="section-title">
+              <div class="section-title__tagline">
+                <span class="left"></span>
+                <h4>{{ data.subtitle }}</h4>
+              </div>
+              <h2 class="section-title__title">
+                {{ data.title }}
+              </h2>
+            </div>
+            <div class="cta-one__btn-box">
+              <a [routerLink]="['/medical-investments']" class="thm-btn btn-cta"
+                >{{ data.cta1 }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

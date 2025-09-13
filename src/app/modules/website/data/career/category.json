@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "icon":"icon-browser",
+        "title":"It Solutions"
+    },
+    {
+        "id":2,
+        "icon":"icon-idea",
+        "title":"Icon Brainstorm"
+    },
+    {
+        "id":3,
+        "icon":"icon-brainstorm",
+        "title":"Product Design"
+    },
+    {
+        "id":4,
+        "icon":"icon-data-security",
+        "title":"Server Security"
+    },
+    {
+        "id":5,
+        "icon":"icon-compliant",
+        "title":"It Management"
+    },
+    {
+        "id":6,
+        "icon":"icon-dashboard",
+        "title":"UX/UI Strategy"
+    },
+    {
+        "id":7,
+        "icon":"icon-magnifying-glass",
+        "title":"It Marketing"
+    },
+    {
+        "id":8,
+        "icon":"icon-piggy-bank",
+        "title":"Bank & Finance"
+    }
+]

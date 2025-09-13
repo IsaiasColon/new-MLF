@@ -1,0 +1,46 @@
+<section
+  class="features-three features-three--about"
+  style="background-color: rgba(235, 243, 252, 0.5)"
+>
+  <div class="features-three__content-box">
+    <div class="container">
+      <div class="section-title text-left">
+        <div class="section-title__tagline">
+          <span class="left"></span>
+          <h4 [innerHTML]="data.subtitle"></h4>
+        </div>
+        <h2 class="section-title__title" [innerHTML]="data.title"></h2>
+        <p
+          style="margin-top: 15px; text-align: justify"
+          [innerHTML]="data.text"
+        ></p>
+      </div>
+      <div class="row" style="padding: 15px">
+        <!--Start Single Features Three-->
+        <div [class]="item.size" *ngFor="let item of services">
+          <div class="features-three__single text-center">
+            <div *ngIf="!!item.short_title" class="short-title">
+              {{ item.short_title }}
+            </div>
+
+            <div *ngIf="!!item.icon" class="item-icon">
+              <img [src]="item.icon" [alt]="item.title" />
+            </div>
+
+            <h4 class="title">
+              <a routerLink="/service-details/{{ item.id }}">{{
+                item.title
+              }}</a>
+            </h4>
+            <div class="features-three__single-btn">
+              <a routerLink="/service-details/{{ item.id }}"
+                ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--End Single Features Three-->
+      </div>
+    </div>
+  </div>
+</section>

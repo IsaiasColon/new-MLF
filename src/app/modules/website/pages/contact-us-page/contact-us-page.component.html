@@ -1,0 +1,104 @@
+<app-banner-with-title-partial
+  [title]="banner.title"
+  [image]="banner.image"
+></app-banner-with-title-partial>
+
+<section class="section-blue">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0"
+      >
+        <div class="box-000001">
+          <div class="title" [innerHTML]="data.box1_title"></div>
+          <button
+            class="cta"
+            (click)="cta(data.box1_cta_action)"
+            [innerHTML]="data.box1_cta_title"
+          ></button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="box-000001">
+          <div class="title" [innerHTML]="data.box2_title"></div>
+          <button
+            class="cta"
+            (click)="cta(data.box2_cta_action)"
+            [innerHTML]="data.box2_cta_title"
+          ></button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="box-000001">
+          <div class="title" [innerHTML]="data.box3_title"></div>
+          <button
+            class="cta"
+            (click)="cta(data.box3_cta_action)"
+            [innerHTML]="data.box3_cta_title"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2">
+        <div class="group-parent">
+          <div
+            class="box-info-subtitle"
+            [innerHTML]="data.box1_info_title"
+          ></div>
+          <div class="box-info-title">
+            <a href="javascript:void(0)"
+              >PO BOX, 7168, Daytona Beach Shores, FL 32116</a
+            >
+          </div>
+          <div class="group-item icon-blue">
+            <img
+              class="icon-location"
+              alt="Icon"
+              src="assets/mlf/img/icons/icon-location.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="group-parent">
+          <div
+            class="box-info-subtitle"
+            [innerHTML]="data.box2_info_title"
+          ></div>
+          <div class="box-info-title">
+            <a href="tel:850-339-3849">+1 (850) 339 3849</a>
+          </div>
+          <div class="group-item icon-yellow">
+            <img
+              class="icon-location"
+              alt="Icon"
+              src="assets/mlf/img/icons/icon-call.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe
+      id="gmap_canvas"
+      [src]="data.map_src"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+<app-contact-form-partial
+  [background_color]="'white'"
+  [data_en]="data_en_form"
+  [data_es]="data_es_form"
+  [padding_bottom]="'100px'"
+></app-contact-form-partial>

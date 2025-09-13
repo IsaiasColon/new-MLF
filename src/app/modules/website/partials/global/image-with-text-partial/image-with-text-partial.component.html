@@ -1,0 +1,81 @@
+<section class="section-about-two mb-5">
+  <div class="container-fullwidth">
+    <div class="row">
+      <div
+        class="column-1 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-0"
+        [style.background-image]="
+          !!data.bg_image_1 ? 'url(' + data.bg_image_1 + ')' : null
+        "
+        [style.background-repeat]="!!data.bg_image_1 ? 'no-repeat' : null"
+        [style.background-size]="!!data.bg_image_1 ? 'cover' : null"
+        [style.background-position]="!!data.bg_image_1 ? 'center' : null"
+        [style.position]="'relative'"
+        [style.text-align]="'center'"
+      >
+        <img
+          *ngIf="!!data.bg_image_small"
+          [src]="data.bg_image_small"
+          alt=""
+          style="width: 300px; margin-top: 100px; border-radius: 10px"
+        />
+      </div>
+      <div
+        class="column-2 {{
+          !!data.bg_image_2 ? 'column-2-white' : null
+        }} col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8"
+        [style.position]="'relative'"
+        [style.background-image]="
+          !!data.bg_image_2 ? 'url(' + data.bg_image_2 + ')' : null
+        "
+        [style.background-repeat]="!!data.bg_image_2 ? 'no-repeat' : null"
+        [style.background-size]="!!data.bg_image_2 ? 'cover' : null"
+        [style.background-position]="!!data.bg_image_2 ? 'center' : null"
+      >
+        <div *ngIf="!!data.bg_image_2" class="image-layer-overlay"></div>
+        <div class="about-three__content-box">
+          <div class="section-title">
+            <div class="section-title__tagline">
+              <span class="left"></span>
+              <h4 [innerHTML]="data.subtitle"></h4>
+            </div>
+            <h2 class="section-title__title" [innerHTML]="data.title"></h2>
+          </div>
+          <p
+            class="about-three__text mb-3"
+            *ngFor="let text of data.texts"
+            [innerHTML]="text"
+          ></p>
+          <ul class="about-three-list list-unstyled">
+            <li *ngFor="let item of data.items">
+              <div class="icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <p [innerHTML]="item"></p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="row row-cta">
+            <div *ngFor="let ct of data.ctas" [class]="ct.col">
+              <div
+                class="banner-one__btn wow slideInUp animated"
+                data-wow-delay="0.5s"
+                data-wow-duration="1500ms"
+              >
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta(ct.action)"
+                  class="thm-btn"
+                  [class.btn-cta]="ct.color === 'yellow'"
+                  [class.btn-cta2]="ct.color === 'blue'"
+                  [innerHTML]="ct.text"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

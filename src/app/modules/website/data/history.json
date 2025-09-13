@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "year":1993,
+        "title":"We Founded Conbiz",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img1.jpg"
+    },
+    {
+        "id":2,
+        "year":1997,
+        "title":"We Have Expert Team Member",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img2.jpg"
+    },
+    {
+        "id":3,
+        "year":1998,
+        "title":"Conbiz Golden Age’s",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img3.jpg"
+    },
+    {
+        "id":4,
+        "year":2001,
+        "title":"Win 1st International Awards",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img4.jpg"
+    },
+    {
+        "id":5,
+        "year":2005,
+        "title":"We Become a Leading Company",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img5.jpg"
+    },
+    {
+        "id":6,
+        "year":2009,
+        "title":"Best Handyman Company In USA",
+        "text":"Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae abillo inventore veritatis et quasi architecto beatae",
+        "image":"assets/images/resources/history-img6.jpg"
+    }
+]

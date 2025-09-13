@@ -1,0 +1,44 @@
+<section class="counter-one counter-one clearfix mb-5">
+  <div class="auto-container">
+    <div class="counter">
+      <div class="row">
+        <div
+          *ngFor="let item of counter | slice : 0 : 4"
+          class="col-2 counter-col"
+        >
+          <span class="odometer-plus" *ngIf="!!item.plus"> + </span>
+          <span class="odometer" [countUp]="item.value">0</span>
+          <h6>{{ item.title }}</h6>
+        </div>
+        <div class="col-4 counter-col-cta">
+          <h2>{{ data.subtitle }}</h2>
+          <div class="button">
+            <a
+              (click)="cta('#bot')"
+              class="thm-btn btn-cta"
+              style="width: 250px"
+              >{{ data.cta1 }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="counter-one counter-two clearfix mb-5">
+  <div class="auto-container">
+    <div class="counter">
+      <div class="row">
+        <div class="col-12 counter-col-cta">
+          <h2>{{ data.subtitle }}</h2>
+          <div class="button">
+            <a routerLink="/" class="thm-btn btn-cta" style="width: 250px">{{
+              data.cta1
+            }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

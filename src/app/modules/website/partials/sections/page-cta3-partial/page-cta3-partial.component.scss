@@ -1,0 +1,34 @@
+div.section-title {
+    text-align: center;
+}
+
+div.section-title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.btn-cta {
+    width: 260px;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn-video-box {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .btn-video-box {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}

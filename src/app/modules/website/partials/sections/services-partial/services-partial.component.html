@@ -1,0 +1,100 @@
+<section class="feauters-two">
+  <div class="container">
+    <div class="row">
+      <div class="section-title col-12 col-lg-8">
+        <div class="section-title__tagline">
+          <span class="left"></span>
+          <h4>{{ data.subtitle }}</h4>
+        </div>
+        <h2 class="section-title__title services-section mb-4">
+          {{ data.title }}
+        </h2>
+        <p class="services-section">
+          {{ data.text1 }}
+        </p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="about-one__btn" style="float: right">
+          <a
+            (click)="cta(data.action)"
+            class="thm-btn btn-cta2 services-section"
+          >
+            {{ data.cta1 }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="feauters-two__content-box">
+          <div class="feauters-two__big-title">
+            <h2></h2>
+          </div>
+          <div class="row">
+            <!--Start Feauters Two Single-->
+            <div
+              class="col-xl-3 col-lg-6 col-md-6"
+              *ngFor="let item of services | slice : 0 : 4"
+            >
+              <div
+                class="feauters-two__single wow fadeInUp animated animated"
+                data-wow-delay="600ms"
+                data-wow-duration="1500ms"
+              >
+                <div class="feauters-two__single-inner">
+                  <div class="img-holder">
+                    <div class="inner">
+                      <img [src]="item.image" [alt]="item.title" />
+                    </div>
+                  </div>
+                  <div class="title-holder">
+                    <h3>
+                      <a routerLink="/service-details/{{ item.id }}">{{
+                        item.title
+                      }}</a>
+                    </h3>
+                    <!-- <p>{{ item.shorttext | slice : 0 : 45 }}</p> -->
+                    <p>{{ item.shorttext }}</p>
+                    <div
+                      class="btn"
+                      style="
+                        background-size: contain;
+                        background-color: #c29d18;
+                      "
+                      [style.background-image]="'url(' + item.icon + ')'"
+                    >
+                      <a routerLink="/service-details/{{ item.id }}"></a>
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <div class="title">
+                      <h3>
+                        <a routerLink="/service-details/{{ item.id }}">{{
+                          item.title
+                        }}</a>
+                      </h3>
+                      <p>{{ item.shorttext }}</p>
+                      <!-- <p>{{ item.shorttext | slice : 0 : 45 }}</p> -->
+                      <div
+                        class="btn"
+                        style="
+                          background-size: contain;
+                          background-color: #c29d18;
+                        "
+                        [style.background-image]="'url(' + item.icon + ')'"
+                      >
+                        <a routerLink="/service-details/{{ item.id }}"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Feauters Two Single-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

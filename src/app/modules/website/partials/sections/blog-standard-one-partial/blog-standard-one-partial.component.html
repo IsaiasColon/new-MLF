@@ -1,0 +1,144 @@
+<section class="blog-standard-one">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-7">
+        <div *ngIf="!!data" class="blog-standard-one__left">
+          <div *ngIf="items.length === 0 && !loading">
+            <div class="blog-standard-one__single">
+              <h2 class="blog-standard-one__single-title">
+                {{
+                  currentLang === "en"
+                    ? "We have not yet made any posts on our blog"
+                    : "Aún no tenemos publicaciones realizadas en nuestro blog"
+                }}
+              </h2>
+            </div>
+          </div>
+
+          <div *ngFor="let item of items">
+            <div class="blog-standard-one__single">
+              <div class="blog-standard-one__single-img">
+                <img
+                  [src]="item.image"
+                  [alt]="'Image'"
+                  onerror="this.onerror=null; this.src='assets/mlf/img/no-img-avatar.png'"
+                />
+              </div>
+              <ul class="meta-info list-unstyled">
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    >{{ item.author_name }}
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{ item.published_at }}
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-comments" aria-hidden="true"></i>Comments
+                    ({{ !!item.reviews ? item.reviews.length : 0 }})</a
+                  >
+                </li>
+              </ul>
+              <h2 class="blog-standard-one__single-title">
+                <a [routerLink]="['/blog-details', item.slug]">{{
+                  item.title
+                }}</a>
+              </h2>
+              <p class="blog-standard-one__single-text">{{ item.excerpt }}</p>
+              <div class="blog-standard-one__single-btn">
+                <a [routerLink]="['/blog-details', item.slug]" class="thm-btn">
+                  {{ currentLang === "en" ? "Learn more" : "Saber más" }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination Start -->
+
+        <nav *ngIf="items.length > 0" role="navigation" aria-label="Pagination">
+          <ul class="ngx-pagination responsive">
+            <ng-container *ngFor="let link of data.links; let i = index">
+              <li
+                *ngIf="link.label.includes('Previous')"
+                class="pagination-previous"
+              >
+                <a
+                  [class.disabled]="!link.url"
+                  href="javascript:void(0)"
+                  (click)="goToPage(link)"
+                  tabindex="0"
+                  >&lt;</a
+                >
+              </li>
+
+              <li *ngIf="i === 0" class="small-screen ms-3">
+                {{ data.current_page }} / {{ data.total }}
+              </li>
+
+              <li
+                *ngIf="
+                  !!link.active &&
+                  !link.label.includes('Previous') &&
+                  !link.label.includes('Next')
+                "
+                class="current"
+              >
+                <span aria-live="polite">
+                  <span>{{ link.label }}</span>
+                </span>
+              </li>
+
+              <li
+                *ngIf="
+                  !link.active &&
+                  !link.label.includes('Previous') &&
+                  !link.label.includes('Next')
+                "
+              >
+                <a
+                  href="javascript:void(0)"
+                  (click)="goToPage(link)"
+                  tabindex="0"
+                >
+                  <span>{{ link.label }}</span>
+                </a>
+              </li>
+
+              <li *ngIf="link.label.includes('Next')" class="pagination-next">
+                <a
+                  [class.disabled]="!link.url"
+                  href="javascript:void(0)"
+                  (click)="goToPage(link)"
+                  tabindex="0"
+                  >&gt;</a
+                >
+              </li>
+            </ng-container>
+          </ul>
+        </nav>
+
+        <pagination-controls
+          *ngIf="items.length > 0"
+          [hidden]="true"
+        ></pagination-controls>
+
+        <!-- Pagination End -->
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <app-blog-sidebar-partial
+          (input_event)="search($event)"
+        ></app-blog-sidebar-partial>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ngx-loading
+  [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"
+></ngx-loading>

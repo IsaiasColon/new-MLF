@@ -1,0 +1,142 @@
+{
+  "general": {
+    "watch_video": "Watch Video",
+
+    "categories": "Categories",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email",
+    "explore": "Explore",
+    "flip_back": "Flip Back",
+    "phone_number": "Phone Number",
+    "your_comment": "Your Comment",
+    "message": "Message",
+    "submit": "Submit",
+    "our_clients": "Our Clients",
+    "learn_more": "Learn More",
+    "read_bio": "Read Bio",
+    "read_more": "Read More",
+    "recent_posts": "Recent Posts",
+    "type_of_service": "Type of Service"
+  },
+
+  "validations": {
+    "first_name_required": "First Name field is Required",
+    "last_name_required": "Last Name field is Required",
+    "email_format_invalid": "Email format is Invalid",
+    "email_required": "Email field is Required",
+    "phone_number_required": "Phone Number field is Required",
+    "type_of_service_required": "Type Of Service field is Required",
+    "message_required": "Message field is Required",
+    "captcha_validation": "You must pass Captcha Validation"
+  },
+
+  "menu": {
+    "home": "Home",
+    "about_us": "About Us",
+    "services": "Services",
+    "health_care_providers": "Health Care Providers",
+    "medical_practice": "Medical Practices",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "services": {
+      "service1": {
+        "title": "Health Care Providers",
+        "text": "A healthcare provider is a professional licensed to provide diagnostic and treatment healthcare services, including medications, surgery, and medical devices.",
+        "button": "Read More"
+      },
+      "service2": {
+        "title": "Medical Practices",
+        "text": "The Medical Practice shall include any form of organization in which Services are provided to patients of the Physician Practice or other physicians.",
+        "button": "Read More"
+      }
+    },
+    "text1": "Medical Practice Income provides comprehensive solutions for independent medical practices and physician entrepreneurs, allowing physicians to reduce administrative burdens and treat patients more efficiently. Our individualized solutions keep practices running smoothly, streamlining the business and clinical aspects of independently-owned and operated medical practices."
+  },
+
+  "page_about": {
+    "title": "About Medical Practice Income",
+    "text1": "<b>Medical Practice Income, Inc. (MPI)</b> provides integrated solutions across various disciplines to meet the needs of today's healthcare practitioners while increasing practice revenue. With more than a decade of expertise in medical licensing, billing, human resources, compliance, and more, the MPI team helps reduce the administrative burdens on medical practices, allowing physicians to do what they do best - treat and heal patients. MPI also supports clients in establishing onsite diagnostic laboratories, compliance documentation, insurance, government payor programs (Medicaid and Medicare), narcotics licenses and DEA compliance, renewals, credential checks, practice operations, marketing, and more. Another synergistic offering that MPI provides is a suite of reimbursable, digital medicine solutions designed to improve clinical outcomes and provide first-class patient care. As a result, doctors no longer have the task of outsourcing this work to multiple agencies and vendors; instead, by working with MPI, these services are provided strategically to give physicians peace of mind that their office is compliant, organized, efficient, and profitable."
+  },
+
+  "page_blog": {
+    "title": "Blog Posts"
+  },
+
+  "page_contact": {
+    "title": "Contact"
+  },
+
+  "page_health_care_providers": {
+    "title": "Services for Health Care Providers",
+    "text1": "Please complete this form to book your complimentary consultation to examine your particular case and have your licensure-related questions answered. A member of our physician-relations team will contact you within one business day."
+  },
+
+  "page_medical_practices": {
+    "title": "Services for Medical Practices"
+  },
+
+  "section_advantage": {
+    "title": "The MPI Advantage",
+    "text1": "A high percentage of our clients successfully obtain their medical licenses when working with us. We have been helping health experts integrate into the labor market because our multidisciplinary team is committed to seeing you successfully practice in the United States. Our team works alongside you in each step, from helping you in the process of obtaining proper licensure to establishing and managing a practice.",
+    "text2": "We're successful because our workflow is methodical, compliant, and transparent. As a result, our clients understand how we work, what laws and regulations apply to their case, and what stage in the process their case is in. We know how medical boards work to the point that we understand that they evaluate."
+  },
+
+  "section_features": {
+    "feature1": {
+      "title": "COMMITMENT",
+      "description": "We're committed to ensuring our clients' professional development, allowing them to achieve the possible dream of improved performance in their practice area."
+    },
+    "feature2": {
+      "title": "EFFICIENCY",
+      "description": "Our team has streamlined the tedious procedures that compliance requires, ensuring fast and reliable results for our clients."
+    },
+    "feature3": {
+      "title": "TRANSPARENCY",
+      "description": "Our clients feel confident participating in a straightforward process, with understandable, transparent information throughout each step."
+    }
+  },
+
+  "section_financial_planning": {
+    "title": "Financial Planning",
+    "text1": "Medical Practice Income offers the industry's most comprehensive, accurate revenue cycle management services. Our services cover as much of the billing process as the client requires. As a result, our clients' collection rates are some of the highest nationwide. In addition, most practices spend considerable human capital managing billing, reworks, and problems associated with the billing. If you're struggling with your revenue cycle management, please schedule a consultation with us for a detailed analysis."
+  },
+
+  "section_health_care_providers": {
+    "title": "Licensing and Credentialing",
+    "text1": "Our experienced bilingual (Spanish and English) team facilitates the medical licensing and credentialing process on the physician's behalf. We focus on atypical cases (examination and post-graduate training deficiencies), guiding our clients through each step, evaluating procedures, and creating strategies and action plans that favor the licensing process - even when the physician must appear before the Medical Board for appeals."
+  },
+
+  "page_medical_practice_services": {
+    "title": "Practice Management Consulting Services & Personalized Practice Management Plans"
+  },
+
+  "section_page": {
+    "text1": "Get in touch! An MPI team member will be happy to answer any questions you may have."
+  },
+
+  "section_team": {
+    "title1": "Executive Directors",
+    "title2": "Scientific and Medical Board of Advisors",
+    "title3": "Our Team"
+  },
+
+  "section_testimonials": {
+    "title": "Testimonials",
+    "text1": "Kind Words from Our Clients."
+  },
+
+  "footer": {
+    "text1": "provides comprehensive solutions for independent medical practices and physician entrepreneurs, reducing administrative burdens and providing better patient care.",
+    "title1": "Quick Links",
+    "title2": "Reach us",
+    "copyright": "All rights reserved",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "sitemap": "Sitemap",
+    "back_to_top": "Back To Top"
+  }
+}

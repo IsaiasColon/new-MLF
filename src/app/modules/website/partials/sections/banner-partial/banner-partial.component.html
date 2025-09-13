@@ -1,0 +1,101 @@
+<section class="banner-one clearfix">
+  <div
+    class="shape1 wow slideInRight"
+    data-wow-delay="500ms"
+    data-wow-duration="3500ms"
+  >
+    <img src="assets/template/images/shapes/banner-shape-1.png" alt="img" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="banner-one__inner-box">
+          <h2 class="banner-one__big-title">MEDICAL</h2>
+          <div class="banner-one__content">
+            <div class="section-title">
+              <div
+                class="section-title__tagline wow slideInUp animated"
+                data-wow-delay="0.2s"
+                data-wow-duration="1500ms"
+              >
+                <span class="left"></span>
+                <h4>{{ data.subtitle }}</h4>
+              </div>
+              <h2
+                class="section-title__title wow slideInUp animated"
+                data-wow-delay="0.3s"
+                data-wow-duration="1500ms"
+              >
+                {{ data.title }}
+              </h2>
+            </div>
+            <p
+              class="banner-one__text wow slideInUp animated"
+              data-wow-delay="0.4s"
+              data-wow-duration="1500ms"
+            >
+              {{ data.slogan }}
+            </p>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div
+                  class="banner-one__btn wow slideInUp animated"
+                  data-wow-delay="0.5s"
+                  data-wow-duration="1500ms"
+                >
+                  <a
+                    (click)="scrollToElement('contact_form')"
+                    class="thm-btn btn-cta"
+                  >
+                    <i class="fa fa-calendar"></i>
+                    {{ data.cta1 }}
+                    <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 offset-lg-1 col-md-12">
+                <div
+                  class="about-one__video-gallery wow fadeInUp animated animated"
+                  data-wow-delay="00ms"
+                  data-wow-duration="1500ms"
+                  style="width: 100px; height: 100px"
+                >
+                  <img
+                    src="assets/template/images/about/about-v1-2.jpg"
+                    alt="img"
+                  />
+                  <div class="video-box">
+                    <a
+                      class="video-popup wow zoomIn animated animated"
+                      data-wow-delay="300ms"
+                      data-wow-duration="1500ms"
+                      title="{{ 'general.watch_video' | translate }}"
+                      target="_blank"
+                      [href]="data.video_url"
+                    >
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="video-box-title">
+                    <a target="_blank" [href]="data.video_url">{{
+                      data.cta2
+                    }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="banner-one__banner-img wow slideInRight"
+            data-wow-delay="500ms"
+            data-wow-duration="2500ms"
+          >
+            <img [src]="data.img" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

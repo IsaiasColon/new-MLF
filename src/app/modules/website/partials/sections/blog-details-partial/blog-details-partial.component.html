@@ -1,0 +1,243 @@
+<section class="blog-details" *ngIf="!!item">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-7">
+        <div class="blog-details__left">
+          <div class="blog-standard-one__single mb-3">
+            <div class="blog-standard-one__single-img">
+              <img
+                [src]="item.image"
+                [alt]="item.title"
+                class="w-100"
+                onerror="this.onerror=null; this.src='assets/mlf/img/no-img-avatar.png'"
+              />
+            </div>
+
+            <ul class="meta-info list-unstyled">
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fa fa-user" aria-hidden="true"></i
+                  >{{ item.author_name }}
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  {{ item.published_at }}
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa fa-comments" aria-hidden="true"></i>Comments ({{
+                    !!item.reviews ? item.reviews.length : 0
+                  }})</a
+                >
+              </li>
+            </ul>
+            <h2 class="blog-standard-one__single-title">{{ item.title }}</h2>
+            <p class="blog-standard-one__single-text">{{ item.excerpt }}</p>
+          </div>
+          <div [innerHtml]="item.content"></div>
+
+          <!-- <div class="tag-social-share-box">
+            <div class="single-box">
+              <div class="title">
+                <h3>Popular Tags</h3>
+              </div>
+              <ul *ngIf="!!blogtags" class="tag-list list-unstyled">
+                <li *ngFor="let tag of getTags(item.tags)">
+                  <a routerLink="/blog/tag/{{ tag.id }}">{{ tag.title }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="single-box">
+              <div class="title right">
+                <h3>Share :</h3>
+              </div>
+              <ul class="social-share list-unstyled">
+                <li *ngFor="let social of socialShare(item.title)">
+                  <a
+                    href="javascript:void(0)"
+                    (click)="openSocialPopup(social)"
+                  >
+                    <i [class]="social.iconClass" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div
+            class="blog-details__author-box"
+            *ngFor="let author of getAuthor(item.author)"
+          >
+            <div class="blog-details__author-box-inner">
+              <div class="blog-details__author-img">
+                <img [src]="author.image" [alt]="author.name" />
+              </div>
+              <div class="blog-details__author-text-box">
+                <h3>{{ author.name }}</h3>
+                <p>{{ author.information | slice : 0 : 150 }}</p>
+                <ul class="social-share list-unstyled">
+                  <li *ngFor="let social of author.social">
+                    <a routerLink="{{ social.url }}"
+                      ><i [class]="social.icon" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div
+            class="blog-details__post"
+            [innerHtml]="postNavigation(blogpost, item.id - 1)"
+          ></div> -->
+          <!--Start comment box-->
+          <!-- <div class="comment-box">
+            <div class="title">
+              <h3>People Comments</h3>
+            </div>
+            <div class="outer-box">
+              <div class="row">
+                <div class="col-md-12">
+                  <div *ngFor="let review of item.reviews">
+                    <div class="single-comment">
+                      <div
+                        class="single-comment-box"
+                        *ngFor="let user of getAuthor(review.user)"
+                      >
+                        <div class="img-holder">
+                          <img [src]="user.image" [alt]="user.name" />
+                        </div>
+                        <div class="text-holder">
+                          <div class="top">
+                            <div class="name">
+                              <h3>{{ user.name }}</h3>
+                            </div>
+                            <div class="date">
+                              <p>{{ review.commentdate }}</p>
+                            </div>
+                          </div>
+                          <div class="text">
+                            <p>{{ review.comment }}</p>
+                          </div>
+                          <div class="reply">
+                            <a href="#"
+                              >Reply<span class="icon-right"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="single-comment comment-reply"
+                      *ngFor="let review of review.replies"
+                    >
+                      <div
+                        class="single-comment-box"
+                        *ngFor="let user of getAuthor(review.user)"
+                      >
+                        <div class="img-holder">
+                          <img [src]="user.image" [alt]="user.name" />
+                        </div>
+                        <div class="text-holder">
+                          <div class="top">
+                            <div class="name">
+                              <h3>{{ user.name }}</h3>
+                            </div>
+                            <div class="date">
+                              <p>{{ review.commentdate }}</p>
+                            </div>
+                          </div>
+                          <div class="text">
+                            <p>{{ review.comment }}</p>
+                          </div>
+                          <div class="reply">
+                            <a href="#"
+                              >Reply<span class="icon-right"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <form id="add-comment-form">
+              <div class="row">
+                <div class="title">
+                  <h3>Leave A Reply</h3>
+                </div>
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-box">
+                        <input
+                          type="text"
+                          name="fname"
+                          value=""
+                          placeholder="Your Full Name"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-box">
+                        <input
+                          type="email"
+                          name="femail"
+                          value=""
+                          placeholder="Email Address "
+                          required=""
+                        />
+                        <div class="icon">
+                          <span class="icon-envelope"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-box">
+                        <textarea
+                          name="message"
+                          placeholder="Write Message"
+                          required=""
+                        ></textarea>
+                        <div class="icon"><span class="fas fa-pen"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="button-box">
+                        <button class="btn-one" type="submit">
+                          <span class="thm-btn">Enviar </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div> -->
+        </div>
+      </div>
+      <!--Start Sidebar-->
+      <div class="col-xl-4 col-lg-5">
+        <app-blog-sidebar-partial></app-blog-sidebar-partial>
+      </div>
+      <!--End Sidebar-->
+    </div>
+  </div>
+</section>
+
+<ngx-loading
+  [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"
+></ngx-loading>

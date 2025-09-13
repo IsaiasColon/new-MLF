@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "title":"Basic Plan",
+        "period":"Monthly",
+        "price":29.99,
+        "includes":[
+            "Busines Consultations",
+            "Marketing Consultations",
+            "Corporate Solutions",
+            "Financial Solutions"
+        ]
+    },
+    {
+        "id":2,
+        "title":"Standard Plan",
+        "period":"6 Month",
+        "price":48.73,
+        "includes":[
+            "Busines Consultations",
+            "Marketing Consultations",
+            "Corporate Solutions",
+            "Financial Solutions"
+        ]
+    },
+    {
+        "id":3,
+        "title":"Premium Plan",
+        "period":"12 Month",
+        "price":87.62,
+        "includes":[
+            "Busines Consultations",
+            "Marketing Consultations",
+            "Corporate Solutions",
+            "Financial Solutions"
+        ]
+    }
+]

@@ -1,0 +1,39 @@
+<section class="features-one clearfix">
+  <div class="container">
+    <div class="row" style="padding-top: 100px">
+      <div
+        class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"
+        *ngFor="let item of data"
+      >
+        <div
+          class="features-one__single wow fadeInRight animated animated"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="features-one__single-left">
+            <div class="features-one__single-left-icon">
+              <img [src]="item.icon" [alt]="item.text" />
+            </div>
+            <div class="features-one__single-left-text">
+              <h4>
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta(item.action)"
+                  [innerHtml]="item.text"
+                ></a>
+              </h4>
+            </div>
+
+            <div class="features-one__single-right">
+              <div class="features-one__single-right-btn">
+                <a (click)="cta(item.action)"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

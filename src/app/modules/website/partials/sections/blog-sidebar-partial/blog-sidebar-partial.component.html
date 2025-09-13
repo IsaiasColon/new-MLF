@@ -1,0 +1,122 @@
+<div class="sidebar">
+  <div
+    class="sidebar-search-box wow fadeInUp animated animated animated"
+    data-wow-delay="0.1s"
+    data-wow-duration="1200ms"
+  >
+    <form class="search-form">
+      <input
+        autocomplete="off"
+        [placeholder]="currentLang === 'en' ? 'Search' : 'Buscador'"
+        type="text"
+        name="searchText"
+        [(ngModel)]="searchText"
+      />
+      <button type="button" (click)="search()">
+        <i class="icon-search"></i>
+      </button>
+    </form>
+  </div>
+  <!--Start Single Sidebar-->
+  <!-- <div class="sidebar__single">
+    <div
+      class="sidebar__single-category wow fadeInUp animated"
+      data-wow-delay="0.1s"
+      data-wow-duration="1200ms"
+    >
+      <h3 class="sidebar__single-title">Category</h3>
+      <ul class="sidebar__single-category-list list-unstyled">
+        <li *ngFor="let item of category">
+          <a routerLink="/blog/cat/{{ item.id }}"
+            >{{ item.title
+            }}<i class="fa fa-chevron-right" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  <!--End Single Sidebar-->
+
+  <!--Start Single Sidebar-->
+  <div class="sidebar__single">
+    <div
+      class="sidebar__single-latest-news wow fadeInUp animated"
+      data-wow-delay="0.3s"
+      data-wow-duration="1200ms"
+    >
+      <h3 class="sidebar__single-title">Publicaciones recientes</h3>
+      <div
+        class="sidebar__single-latest-news-single"
+        *ngFor="let item of getRecentPost()"
+      >
+        <div class="sidebar__single-latest-news-img">
+          <img [src]="item.image[0]" [alt]="item.title" />
+        </div>
+        <div class="sidebar__single-latest-news-text">
+          <h4>
+            <a routerLink="/blog-details/{{ item.id }}">{{ item.title }}</a>
+          </h4>
+          <ul class="meta-info list-unstyled">
+            <li>
+              <a routerLink="/blog-details/{{ item.id }}"
+                ><i class="fa fa-calendar" aria-hidden="true"></i
+                >{{ item.postdate }}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Single Sidebar-->
+
+  <!--Start Single Sidebar-->
+  <!-- <div class="sidebar__single">
+    <div
+      class="sidebar__single-contact-box wow fadeInUp animated"
+      data-wow-delay="0.5s"
+      data-wow-duration="1200ms"
+    >
+      <div class="shape1">
+        <img
+          src="assets/template/images/shapes/sidebar-contact-box-shape1.png"
+          alt="img"
+        />
+      </div>
+      <div class="shape2">
+        <img
+          src="assets/template/images/shapes/sidebar-contact-box-shape2.png"
+          alt="img"
+        />
+      </div>
+      <h2>Lorem Ipsum Itsem dor set</h2>
+      <div class="sidebar__single-contact-box-btn">
+        <a routerLink="/contact" class="thm-btn">Lorem Ipsum</a>
+      </div>
+      <div class="sidebar__single-contact-box-img">
+        <img
+          src="assets/template/images/blog/blog-sidebar-img1.png"
+          alt="img"
+        />
+      </div>
+    </div>
+  </div> -->
+  <!--End Single Sidebar-->
+
+  <!--Start Single Sidebar-->
+  <!-- <div class="sidebar__single">
+    <div
+      class="sidebar__single-popular-tags wow fadeInUp animated"
+      data-wow-delay="0.7s"
+      data-wow-duration="1200ms"
+    >
+      <h3 class="sidebar__single-title">Popular Tags</h3>
+      <ul class="list-unstyled">
+        <li *ngFor="let item of tags">
+          <a routerLink="/blog/tag/{{ item.id }}">{{ item.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  <!--End Single Sidebar-->
+</div>

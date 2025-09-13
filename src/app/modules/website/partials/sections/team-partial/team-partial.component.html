@@ -1,0 +1,95 @@
+<section class="team-one">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__tagline">
+        <span class="left"></span>
+        <h4>{{ data.subtitle }}</h4>
+      </div>
+      <h2 class="section-title__title">
+        {{ data.title }}
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="team-one__content-wrapper">
+          <div class="team-one__big-title">
+            <h2></h2>
+          </div>
+          <div class="row">
+            <!--Start Single Team One-->
+
+            <div class="row" *ngFor="let teams of data.teams">
+              <div [class]="item.col" *ngFor="let item of teams.team">
+                <div
+                  class="team-one__single wow fadeInRight"
+                  data-wow-delay="100ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="team-one__single-wrapper">
+                    <div class="team-one__single-img">
+                      <img [src]="item.image" [alt]="item.name" />
+                    </div>
+                    <div class="team-one__single-title">
+                      <h4>
+                        <a href="javascript:void(0)">{{ item.name }}</a>
+                      </h4>
+                      <p>{{ item.post }}</p>
+                    </div>
+                    <div class="team-one__single-title-overly">
+                      <h4>
+                        <a href="javascript:void(0)">{{ item.name }}</a>
+                      </h4>
+                      <p>{{ item.post }}</p>
+                      <ul class="social-icon list-unstyled">
+                        <!-- Data -->
+                        <li
+                          *ngIf="!!item.linkedin"
+                          (click)="cta(item.linkedin)"
+                          style="width: 100%; cursor: pointer"
+                        >
+                          <img
+                            src="assets/mlf/img/icons/linkedin_blue.png"
+                            alt="LinkedIn"
+                            style="width: 30px; display: inline-block"
+                          />
+                          <span
+                            style="
+                              font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 500;
+                              font-size: 16px;
+                              line-height: 23px;
+                              color: #004482;
+                            "
+                            >LinkedIn</span
+                          >
+                        </li>
+
+                        <!-- <li *ngFor="let social of item.social">
+                          <a routerLink="{{ social.url }}"
+                            ><i [class]="social.icon" aria-hidden="true"></i
+                          ></a>
+                        </li> -->
+                        <!-- Data -->
+                      </ul>
+                      <div class="icon">
+                        <a href="javascript:void(0)"
+                          ><i
+                            class="fa fa-angle-double-right"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--End Single Team One-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

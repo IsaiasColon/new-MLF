@@ -1,0 +1,61 @@
+<section class="blog-one">
+  <div
+    class="shape1 wow slideInRight"
+    data-wow-delay="500ms"
+    data-wow-duration="2500ms"
+  >
+    <img src="assets/template/images/shapes/blog-v1-shape1.png" alt="img" />
+  </div>
+  <div class="container">
+    <div class="section-title text-center">
+      <div class="section-title__tagline">
+        <span class="left"></span>
+        <h4>Blog & News</h4>
+        <span class="right"></span>
+      </div>
+      <h2 class="section-title__title">
+        Trending Business Consulting<br />Article & Tips
+      </h2>
+    </div>
+    <div class="row">
+      <!--Start Single Blog One-->
+      <div class="col-xl-4 col-lg-4" *ngFor="let item of getRecentPost()">
+        <div
+          class="blog-one__single wow fadeInLeft"
+          data-wow-delay="500ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="blog-one__single-img">
+            <img [src]="item.image[0]" [alt]="item.title" />
+            <div class="overlay-icon">
+              <a routerLink="/blog-details/{{ item.id }}"
+                ><span class="icon-plus"></span
+              ></a>
+            </div>
+          </div>
+          <div class="blog-one__single-text-box">
+            <h3 class="blog-one__single-title">
+              <a routerLink="/blog-details/{{ item.id }}">{{ item.title }}</a>
+            </h3>
+            <p class="blog-one__single-text">
+              {{ item.shorttext | slice : 0 : 60 }}
+            </p>
+            <ul class="blog-one__meta-info list-unstyled">
+              <li>
+                <i class="fa fa-calendar" aria-hidden="true"></i
+                >{{ item.postdate }}
+              </li>
+              <li>
+                <i class="fa fa-comments" aria-hidden="true"></i
+                ><a routerLink="/blog-details/{{ item.id }}"
+                  >Com ({{ item.reviews.length }})</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End Single Blog One-->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+.features-three--about {
+    background: #ffffff;
+}
+
+.features-three__single-icon img {
+    width: 100px;
+}
+
+.features-three__single {
+    min-height: 480px;
+    padding: 45px 15px 15px 15px;
+}
+
+.features-three__single:hover {
+    background-color: #cccccc;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.features-three__single-title {
+    min-height: 100px;
+}
+
+.features-three__single-text {
+    min-height: 100px;
+}
+
+.features-three__single:hover .features-three__single-text {
+    color: #000000;
+}
+
+.features-three__single-title a:hover {
+    color: #000000;
+}
+
+.features-three__single:hover .features-three__single-title a {
+    color: #000000;
+}
+
+.features-three--about .features-three__single-btn a {
+    background-color: rgba(97, 198, 236, 0.15);
+    color: #004482;
+}
+
+@media only screen and (min-width: 1200px) {
+    .offset-xl-2-custom {
+        margin-left: 12%;
+    }
+}

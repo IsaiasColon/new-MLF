@@ -1,0 +1,112 @@
+<section class="section-about-two">
+  <div class="container-fullwidth">
+    <div class="row">
+      <div
+        class="column-1 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-0"
+      ></div>
+      <div
+        class="column-2 col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8"
+      >
+        <div class="about-three__content-box">
+          <div class="section-title">
+            <div class="section-title__tagline">
+              <span class="left"></span>
+              <h4 [innerHTML]="data.subtitle"></h4>
+            </div>
+            <h2 class="section-title__title" [innerHTML]="data.title"></h2>
+          </div>
+          <p class="about-three__text" [innerHTML]="data.text1"></p>
+          <p class="about-three__text" [innerHTML]="data.text2"></p>
+          <ul class="about-three-list list-unstyled">
+            <li>
+              <div class="icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <p [innerHTML]="data.item1"></p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <p [innerHTML]="data.item2"></p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <p [innerHTML]="data.item3"></p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <p [innerHTML]="data.item4"></p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="row row-cta">
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="banner-one__btn wow slideInUp animated"
+                data-wow-delay="0.5s"
+                data-wow-duration="1500ms"
+              >
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta('#bot')"
+                  class="thm-btn btn-cta"
+                  [innerHTML]="data.cta1"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1 col-md-12">
+              <div
+                class="about-one__video-gallery wow fadeInUp animated animated mt-5"
+                data-wow-delay="00ms"
+                data-wow-duration="1500ms"
+                style="width: 100px; height: 100px; text-align: center"
+              >
+                <img
+                  src="assets/template/images/about/about-v1-2.jpg"
+                  alt="img"
+                />
+                <div class="video-box">
+                  <a
+                    class="video-popup wow zoomIn animated animated"
+                    data-wow-delay="300ms"
+                    data-wow-duration="1500ms"
+                    [title]="data.cta2"
+                    target="_blank"
+                    [href]="data.video_url"
+                  >
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="video-box-title">
+                  <a
+                    target="_blank"
+                    [href]="data.video_url"
+                    [innerHTML]="data.cta2"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div>
+            <a routerLink="/about" class="thm-btn btn-cta">Speak with an expert</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

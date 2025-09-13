@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "icon":"assets/images/icon/features-v1-icon1.png",
+        "text":"Guide to Becoming a Digital<br>First Organization"
+    },
+    {
+        "id":2,
+        "icon":"assets/images/icon/features-v1-icon2.png",
+        "text":"We’re Committed to Creating<br>Change That Matters"
+    }
+]

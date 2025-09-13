@@ -1,0 +1,20 @@
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-website',
+  templateUrl: './website.component.html',
+  styleUrls: ['./website.component.scss'],
+})
+export class WebsiteComponent implements OnInit, OnDestroy {
+  constructor() {
+    console.log('WebsiteComponent constructor');
+  }
+
+  ngOnInit(): void {
+    console.log('WebsiteComponent ngOnInit');
+  }
+
+  ngOnDestroy(): void {
+    console.log('WebsiteComponent ngOnDestroy');
+  }
+}

@@ -1,0 +1,56 @@
+<section class="about-one">
+  <div class="container">
+    <div class="row">
+      <!-- Start About One Left-->
+      <div class="col-xl-6">
+        <div class="about-one__left">
+          <div class="about-one__left-img">
+            <img src="assets/mlf/img/about/about.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <!-- End About One Left-->
+      <!-- Start About One Right-->
+      <div class="col-xl-6">
+        <div class="about-one__right">
+          <div class="section-title">
+            <div class="section-title__tagline">
+              <span class="left"></span>
+              <h4>{{ data.subtitle }}</h4>
+            </div>
+            <h2 class="section-title__title">
+              {{ data.title }}
+            </h2>
+          </div>
+          <div class="about-one__right-inner">
+            <h5 class="about-one__right-tagline">
+              {{ data.title2 }}
+            </h5>
+            <p class="about-one__right-text">
+              {{ data.text2 }}
+            </p>
+            <div class="about-one__author-box">
+              <div class="img-box">
+                <img src="assets/mlf/img/lilia_waldero.png" alt="img" />
+              </div>
+              <div class="title">
+                <h3>{{ data.title3 }}</h3>
+                <p>
+                  {{ data.text3 }}
+                </p>
+                <h5>{{ data.text4 }}</h5>
+              </div>
+            </div>
+            <div class="about-one__btn">
+              <a [routerLink]="['/about-us']" class="thm-btn btn-cta2"
+                >{{ data.cta1 }}
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About One Right-->
+    </div>
+  </div>
+</section>

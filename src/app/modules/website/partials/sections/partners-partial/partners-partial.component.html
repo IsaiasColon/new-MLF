@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="section-title" style="text-align: center">
+    <div class="section-title__tagline" style="text-align: center">
+      <span class="left"></span>
+      <h4>{{ data.subtitle }}</h4>
+      <span class="right"></span>
+    </div>
+    <h2 class="section-title__title">
+      {{ data.title }}
+    </h2>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="partner-one__content">
+        <owl-carousel-o
+          [options]="settings"
+          class="partner-one__carousel list-unstyled"
+        >
+          <!-- Data -->
+          <ng-container *ngFor="let item of partners">
+            <ng-template carouselSlide>
+              <!--Start Single Partner One-->
+              <li class="partner-one__single">
+                <div class="partner-one__img">
+                  <a href="javascript:void(0)"
+                    ><img [src]="item.image" alt="img"
+                  /></a>
+                </div>
+              </li>
+              <!--End Single Partner One-->
+            </ng-template>
+          </ng-container>
+          <!-- Data -->
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</div>

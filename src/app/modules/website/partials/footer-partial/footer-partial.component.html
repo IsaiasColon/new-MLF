@@ -1,0 +1,279 @@
+<footer class="footer-one">
+  <div class="container">
+    <div
+      *ngIf="_router.url === '/contact-us'"
+      class="row"
+      style="position: relative; top: 20px"
+    >
+      <div
+        class="col-xl-6 offset-xl-0 col-lg-10 offset-lg-2 col-md-12 col-sm-12 col-12"
+      >
+        <div
+          class="features-one__single wow fadeInRight animated animated"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="features-one__single-left">
+            <div class="features-one__single-left-icon">
+              <img [src]="'assets/mlf/img/cog_yellow.svg'" [alt]="'Icon'" />
+            </div>
+            <div class="features-one__single-left-text">
+              <h4>
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta('#bot')"
+                  [innerHtml]="data.cta1_title"
+                ></a>
+              </h4>
+            </div>
+
+            <div class="features-one__single-right">
+              <div class="features-one__single-right-btn">
+                <a (click)="cta('#bot')"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-xl-6 offset-xl-0 col-lg-10 offset-lg-2 col-md-12 col-sm-12 col-12"
+      >
+        <div
+          class="features-one__single wow fadeInRight animated animated"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="features-one__single-left">
+            <div class="features-one__single-left-icon">
+              <img [src]="'assets/mlf/img/search_yellow.svg'" [alt]="'Icon'" />
+            </div>
+            <div class="features-one__single-left-text">
+              <h4>
+                <a
+                  href="javascript:void(0)"
+                  (click)="cta('#investments')"
+                  [innerHtml]="data.cta2_title"
+                ></a>
+              </h4>
+            </div>
+
+            <div class="features-one__single-right">
+              <div class="features-one__single-right-btn">
+                <a (click)="cta('#investments')"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-one__top">
+      <div class="big-title">
+        <h2></h2>
+      </div>
+      <div class="row">
+        <!--Start Footer Widget Column-->
+        <div
+          class="col-xl-3 col-lg-6 col-md-6 mt-5 wow animated fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="footer-widget__column footer-widget__overview mar-top">
+            <div class="footer-widget__about-logo">
+              <a routerLink="/"
+                ><img src="assets/mlf/img/logo_foot.png" alt="img"
+              /></a>
+            </div>
+            <p>
+              {{ data.text1 }}
+            </p>
+            <div class="row">
+              <div class="col-2">
+                <a
+                  href="https://www.facebook.com/medicalicensefactory"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    src="assets/mlf/img/icons/facebook.png"
+                    alt="img"
+                    style="width: 30px"
+                /></a>
+              </div>
+              <div class="col-2">
+                <a
+                  href="https://www.instagram.com/medicalicensefactory/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    src="assets/mlf/img/icons/instagram.png"
+                    alt="img"
+                    style="width: 30px"
+                /></a>
+              </div>
+              <div class="col-2">
+                <a
+                  href="https://www.linkedin.com/company/medicalicensefactory/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    src="assets/mlf/img/icons/linkedin.png"
+                    alt="img"
+                    style="width: 30px"
+                /></a>
+              </div>
+              <div class="col-2">
+                <a
+                  href="https://www.youtube.com/@medicallicensefactoryllc3411"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    src="assets/mlf/img/icons/youtube.png"
+                    alt="img"
+                    style="width: 30px"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Footer Widget Column-->
+        <!--Start Footer Widget Column-->
+        <div
+          class="col-xl-2 col-lg-6 col-md-6 mt-5 wow animated fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="footer-widget__column footer-widget__company mar-top">
+            <h3 class="footer-widget__title">{{ data.section1 }}</h3>
+            <ul class="footer-widget__company-list list-unstyled">
+              <li>
+                <a [routerLink]="['/about-us']"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                  >{{ data.about_us }}</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/services']"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                  >{{ data.services }}</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/investments']"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                  >{{ data.investments }}</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/blog']"
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                  >{{ data.blog }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--End Footer Widget Column-->
+        <!--Start Footer Widget Column-->
+        <div
+          class="col-xl-4 col-lg-6 col-md-6 mt-5 wow animated fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <div class="footer-widget__column footer-widget__company mar-top">
+            <h3 class="footer-widget__title">{{ data.section2 }}</h3>
+            <p [innerHTML]="data.section2_text"></p>
+            <div class="row">
+              <div class="col-10">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" [placeholder]="data.input1_text" />
+                  </div>
+                  <div class="cta-one__btn-box mt-3" style="text-align: left">
+                    <a
+                      href="javascript:void(0)"
+                      class="thm-btn btn-cta"
+                      [innerHTML]="data.button1_text"
+                    >
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Footer Widget Column-->
+        <!--Start Footer Widget Column-->
+        <div
+          class="col-xl-3 col-lg-6 col-md-6 mt-5 wow animated fadeInUp"
+          data-wow-delay="0.7s"
+        >
+          <div class="footer-widget__column footer-widget__about">
+            <h3 class="footer-widget__title" style="margin-top: -10px">
+              {{ data.section3 }}
+            </h3>
+            <div class="footer-contact-info">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="icon">
+                    <img
+                      src="assets/mlf/img/icons/footer/phone.png"
+                      alt="Icon"
+                      style="width: 25px; margin-right: 10px"
+                    />
+                  </div>
+                  <div class="text">
+                    <p>+1 (850) 339 3849</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <img
+                      src="assets/mlf/img/icons/footer/pin.png"
+                      alt="Icon"
+                      style="width: 25px; margin-right: 10px"
+                    />
+                  </div>
+                  <div class="text">
+                    <p>PO BOX. 7168. Daytona Beach Shores, FL 32116.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--End Footer Widget Column-->
+      </div>
+    </div>
+    <!--Start Footer One Bottom-->
+    <div class="footer-one__bottom">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="footer-one__bottom-inner">
+            <div class="row">
+              <div class="col-6">
+                <div class="footer-one__bottom-text" style="text-align: left">
+                  <p>© 2025 Medical License Factory. All rights reserved</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="footer-one__bottom-text" style="text-align: right">
+                  <p>
+                    Terms and Conditions | Privacy Policy | Sitemap | Disclaimer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Footer One Bottom-->
+  </div>
+</footer>
+<!-- <app-back-to-top-partial></app-back-to-top-partial> -->

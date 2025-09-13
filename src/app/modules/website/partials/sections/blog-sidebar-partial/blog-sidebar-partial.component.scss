@@ -1,0 +1,61 @@
+.sidebar-search-box .search-form button {
+    background: #004482;
+    box-shadow: 0 10px 30px #fff;
+    padding-top: 4px;
+}
+
+.sidebar-search-box .search-form button i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar__single-category-list li a:hover {
+    color: #004482;
+}
+
+.sidebar__single-latest-news-text h4 a:hover {
+    color: #004482;
+}
+
+.sidebar__single-latest-news-text .meta-info li a:hover {
+    color: #004482;
+}
+
+.sidebar__single-contact-box {
+    background: #004482;
+    height: 350px;
+    width: 280px;
+}
+
+.sidebar__single-contact-box-btn .thm-btn {
+    background: #C09C00;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 180px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sidebar__single-contact-box-btn .thm-btn:after {
+    background: #C09C00;
+}
+
+.sidebar__single-popular-tags ul li:hover a {
+    background: #004482;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+    .sidebar__single-contact-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sidebar__single-contact-box {
+        width: 100%;
+        text-align: center;
+    }
+}

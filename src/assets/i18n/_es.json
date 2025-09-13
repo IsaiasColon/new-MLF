@@ -1,0 +1,142 @@
+{
+  "general": {
+    "watch_video": "Ver Vídeo",
+
+    "categories": "Categorías",
+    "first_name": "Primer Nombre",
+    "last_name": "Primer Apellido",
+    "email": "Correo Electrónico",
+    "explore": "Explorar",
+    "flip_back": "Girar",
+    "phone_number": "Número Telefónico",
+    "your_comment": "Tu Comentario",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "our_clients": "Nuestros Clientes",
+    "learn_more": "Saber Más",
+    "read_bio": "Leer Biografía",
+    "read_more": "Leer Más",
+    "recent_posts": "Publicaciones Recientes",
+    "type_of_service": "Tipo de Servicio"
+  },
+
+  "validations": {
+    "first_name_required": "El campo Nombre es obligatorio",
+    "last_name_required": "El campo Apellido es obligatorio",
+    "email_format_invalid": "El formato de Correo Electrónico es inválido",
+    "email_required": "El campo Email es obligatorio",
+    "phone_number_required": "El campo Número Telefónico es obligatorio",
+    "type_of_service_required": "El campo Tipo de Servicio es obligatorio",
+    "message_required": "El campo Mensaje es obligatorio",
+    "captcha_validation": "Debes pasar la validación de Captcha"
+  },
+
+  "menu": {
+    "home": "Inicio",
+    "about_us": "Acerca de Nosotros",
+    "services": "Servicios",
+    "health_care_providers": "Proveedores de Salud",
+    "medical_practice": "Prácticas Médicas",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+
+  "home": {
+    "services": {
+      "service1": {
+        "title": "Proveedores de Salud",
+        "text": "Un proveedor de Salud es un profesional con licencia para brindar servicios de atención médica de diagnóstico y tratamiento, incluidos medicamentos, cirugía y dispositivos médicos.",
+        "button": "Leer Más"
+      },
+      "service2": {
+        "title": "Prácticas Médicas",
+        "text": "La práctica médica incluirá cualquier forma de organización en la que se presten servicios a los pacientes de la práctica médica o de otros médicos.",
+        "button": "Leer Más"
+      }
+    },
+    "text1": "Medical Practice Income ofrece soluciones integrales para prácticas médicas independientes y empresarios médicos, permitiéndoles reducir las cargas administrativas y tratar a sus pacientes de manera más eficiente. Nuestras soluciones individualizadas mantienen las prácticas funcionando sin problemas, agilizando los aspectos comerciales y clínicos de las prácticas médicas independientes."
+  },
+
+  "page_about": {
+    "title": "Acerca de Medical Practice Income",
+    "text1": "<b>Medical Practice Income, Inc. (MPI)</b> ofrece soluciones integradas en varias disciplinas para satisfacer las necesidades de los profesionales de la salud de hoy en día y aumentar los ingresos de la práctica. Con más de una década de experiencia en licencias médicas, facturación, recursos humanos, cumplimiento y más, el equipo de MPI ayuda a reducir las cargas administrativas en las prácticas médicas, lo que permite a los médicos hacer lo que mejor saben hacer: tratar y curar a los pacientes. MPI también apoya a los clientes en el establecimiento de laboratorios de diagnóstico en el sitio, documentación de cumplimiento, seguros, programas gubernamentales de pago (Medicaid y Medicare), licencias de narcóticos y cumplimiento de la DEA, renovaciones, verificaciones de credenciales, operaciones de práctica, mercadeo y más. Otra oferta sinérgica que ofrece MPI es un conjunto de soluciones de medicina digital reembolsables diseñadas para mejorar los resultados clínicos y brindar atención al paciente de primera clase. Como resultado, los médicos ya no tienen la tarea de subcontratar este trabajo a varias agencias y proveedores; en cambio, al trabajar con MPI, estos servicios se brindan estratégicamente para brindarles a los médicos la tranquilidad de saber que su consultorio cumple con las normas, está organizado, es eficiente y rentable."
+  },
+
+  "page_blog": {
+    "title": "Blog de Publicaciones"
+  },
+
+  "page_contact": {
+    "title": "Contáctanos"
+  },
+
+  "page_health_care_providers": {
+    "title": "Servicios para Proveedores de Salud",
+    "text1": "Complete este formulario para reservar su consulta gratuita para examinar su caso particular y obtener respuestas a sus preguntas relacionadas con la licencia. Un miembro de nuestro equipo de relaciones con los médicos se comunicará con usted dentro de un día hábil."
+  },
+
+  "page_medical_practices": {
+    "title": "Servicios para Pŕacticas Médicas"
+  },
+
+  "section_advantage": {
+    "title": "La Ventaja de MPI",
+    "text1": "Un alto porcentaje de nuestros clientes obtienen con éxito sus licencias médicas al trabajar con nosotros. Hemos estado ayudando a los expertos en salud a integrarse al mercado laboral porque nuestro equipo multidisciplinario está comprometido a verlo practicar con éxito en los Estados Unidos. Nuestro equipo trabaja junto a usted en cada paso, desde ayudarlo en el proceso de obtener la licencia adecuada hasta establecer y administrar una práctica.",
+    "text2": "Tenemos éxito porque nuestro flujo de trabajo es metódico, compatible y transparente. Como resultado, nuestros clientes entienden cómo trabajamos, qué leyes y reglamentos se aplican a su caso y en qué etapa del proceso se encuentra su caso. Sabemos cómo funcionan las juntas médicas al punto que entendemos que evalúan."
+  },
+
+  "section_features": {
+    "feature1": {
+      "title": "COMPROMISO",
+      "description": "Estamos comprometidos en asegurar el desarrollo profesional de nuestros clientes, permitiéndoles alcanzar el sueño posible de un mejor desempeño en su área de práctica."
+    },
+    "feature2": {
+      "title": "EFICIENCIA",
+      "description": "Nuestro equipo ha simplificado los tediosos procedimientos que requiere el cumplimiento, asegurando resultados rápidos y confiables para nuestros clientes."
+    },
+    "feature3": {
+      "title": "TRANSPARENCIA",
+      "description": "Nuestros clientes se sienten seguros al participar en un proceso sencillo, con información comprensible y transparente en cada paso."
+    }
+  },
+
+  "section_financial_planning": {
+    "title": "Planificacion Financiera",
+    "text1": "Medical Practice Income ofrece los servicios de gestión del ciclo de ingresos más completos y precisos de la industria. Nuestros servicios cubren tanto del proceso de facturación como el cliente lo requiera. Como resultado, las tasas de cobro de nuestros clientes se encuentran entre las más altas del país. Además, la mayoría de las prácticas gastan una cantidad considerable de capital humano en la gestión de la facturación, los retrabajos y los problemas asociados con la facturación. Si tiene problemas con la gestión de su ciclo de ingresos, programe una consulta con nosotros para un análisis detallado."
+  },
+
+  "section_health_care_providers": {
+    "title": "Licencias y Credenciales",
+    "text1": "Nuestro experimentado equipo bilingüe (español e inglés) facilita el proceso de acreditación y licencia médica en nombre del médico. Nos enfocamos en casos atípicos (deficiencias de examen y formación de posgrado), guiando a nuestros clientes en cada paso, evaluando procedimientos y creando estrategias y planes de acción que favorecen el proceso de licenciamiento, incluso cuando el médico debe comparecer ante la Junta Médica para apelaciones."
+  },
+
+  "page_medical_practice_services": {
+    "title": "Servicios de Consultoría de Gestión de Prácticas y Planes de Gestión de Prácticas Personalizadas"
+  },
+
+  "section_page": {
+    "text1": "¡Ponte en contacto! Un miembro del equipo de MPI estará encantado de responder cualquier pregunta que pueda tener."
+  },
+
+  "section_team": {
+    "title1": "Directores Ejecutivos",
+    "title2": "Junta de Asesores Científicos y Médicos",
+    "title3": "Nuestro Equipo"
+  },
+
+  "section_testimonials": {
+    "title": "Testimonios",
+    "text1": "Dulces Palabras de Nuestros Clientes."
+  },
+
+  "footer": {
+    "text1": "proporciona soluciones integrales para prácticas médicas independientes y médicos empresarios, reduciendo las cargas administrativas y brindando una mejor atención al paciente.",
+    "title1": "Enlaces Rápidos",
+    "title2": "Contáctanos",
+    "copyright": "Derechos reservados",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "sitemap": "Mapa del sitio",
+    "back_to_top": "Subir"
+  }
+}

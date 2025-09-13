@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Take a Coffee",
+        "icon": "icon-coffee-cup",
+        "text":"Sed ut perspca unde omnis natus error voluptem",
+        "extclass":"top50"
+    },
+    {
+        "id": 2,
+        "title": "Consultation",
+        "icon": "icon-advisor",
+        "text":"Sed ut perspca unde omnis natus error voluptem",
+        "extclass":"style2"
+    },
+    {
+        "id": 3,
+        "title": "Data Analysis",
+        "icon": "icon-dashboard",
+        "text":"Sed ut perspca unde omnis natus error voluptem",
+        "extclass":"top65"
+    },
+    {
+        "id": 4,
+        "title": "Get Success",
+        "icon": "icon-success",
+        "text":"Sed ut perspca unde omnis natus error voluptem",
+        "extclass":"style2 top20"
+    }
+]

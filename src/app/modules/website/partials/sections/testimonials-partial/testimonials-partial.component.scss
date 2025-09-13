@@ -1,0 +1,36 @@
+.testimonial-one__text-box {
+    height: 400px;
+}
+
+.testimonial-one__text-box-botton {
+    position: relative;
+    display: block;
+    margin-top: 14px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .about-one__btn {
+        text-align: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-one__btn {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .about-one__btn {
+        text-align: none !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-one__btn {
+        text-align: right;
+    }
+}
+

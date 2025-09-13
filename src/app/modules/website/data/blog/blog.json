@@ -1,0 +1,291 @@
+[
+  {
+    "id": 1,
+    "title": "Evolving Program Manage Office For Modern",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img1.jpg"],
+    "category": [1, 2],
+    "tags": [1, 2, 3, 4],
+    "author": [1],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Design Decision With BeaFeitler Unstoppable",
+    "format": "video",
+    "video": "https://www.youtube.com/watch?v=TKnufs85hXk",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img2.jpg"],
+    "category": [3, 4],
+    "tags": [5, 6, 7, 8],
+    "author": [2],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Pain-Free Workflow Issue Reporting Resolution",
+    "format": "no-thumb",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img3.jpg"],
+    "category": [5, 6],
+    "tags": [9, 10, 11, 12],
+    "author": [3],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Data Onboarding Chall For Software Products",
+    "format": "thumb-bg",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img4.jpg"],
+    "category": [1, 2],
+    "tags": [1, 2, 3, 4],
+    "author": [4],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "We Google Analytics Helps Developers Design",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img5.jpg"],
+    "category": [3, 4],
+    "tags": [5, 6, 7, 8],
+    "author": [1],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Information And Inform Architecture Picture",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img6.jpg"],
+    "category": [5, 6],
+    "tags": [9, 10, 11, 12],
+    "author": [2],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Designers Can Help Restaur Move Into Experiences",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img7.jpg"],
+    "category": [1, 2],
+    "tags": [1, 2, 3, 4],
+    "author": [3],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Right Kind Research Study With Diamond Model",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img8.jpg"],
+    "category": [3, 4],
+    "tags": [5, 6, 7, 8],
+    "author": [4],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Pain-Free Workflow Issue Reporting Resolution",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img9.jpg"],
+    "category": [5, 6],
+    "tags": [9, 10, 11, 12],
+    "author": [1],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  }
+]
