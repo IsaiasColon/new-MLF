@@ -8,6 +8,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 export class BannerWithTitlePartialComponent implements OnInit, OnDestroy {
   @Input() image: string | null = null;
   @Input() title: string | null = null;
+  @Input() subtitle: string | null = null;
 
   constructor() {
     console.log('BannerWithTitlePartialComponent constructor');

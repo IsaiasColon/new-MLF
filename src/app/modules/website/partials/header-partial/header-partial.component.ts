@@ -40,13 +40,56 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
       submenu: [
         {
           id: 3.1,
-          link: '/services/health-care-providers',
-          linkText: 'Health Care Providers',
+          link: '/services/licencia-medicas',
+          linkText: 'Medical Licenses',
+          child: true,
+          submenu: [
+            {
+              id: `3.1.1`,
+              link: '/services/licencia-medicas/licencia-de-acn-md',
+              linkText: 'Licencia de ACN MD',
+            },
+            {
+              id: `3.1.2`,
+              link: '/services/licencia-medicas/licencia-de-acnpa',
+              linkText: 'Licencia de ACNPA',
+            },
+            {
+              id: `3.1.3`,
+              link: '/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration',
+              linkText: 'Licencia Out of State Telehealth Provider Registration',
+            },
+            {
+              id: `3.1.4`,
+              link: '/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement',
+              linkText: 'Licencia Medical Doctor by MOBILE Endorsement',
+            },
+            {
+              id: `3.1.5`,
+              link: '/services/licencia-medicas/licencia-por-examinacion',
+              linkText: 'Licencia por Examinación',
+            },
+          ],
         },
         {
           id: 3.2,
-          link: '/services/medical-practices',
-          linkText: 'Medical Practices',
+          link: '/services/reclutamiento',
+          linkText: 'Recruitment',
+        },
+        {
+          id: 3.3,
+          link: '/services/facturacion',
+          linkText: 'Billing',
+        },
+        {
+          id: 3.4,
+          link: 'https://www.labendoc.com/',
+          linkText: 'LabEndoc',
+        },
+        {
+          id: 3.5,
+          link: '/services/marketing-and-branding',
+          linkText: 'Marketing and branding',
         },
       ],
     },
@@ -81,13 +124,56 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
       submenu: [
         {
           id: 3.1,
-          link: '/services/health-care-providers',
-          linkText: 'Proveedores de Servicios',
+          link: '/services/licencia-medicas',
+          linkText: 'Licencia medicas',
+          child: true,
+          submenu: [
+            {
+              id: `3.1.1`,
+              link: '/services/licencia-medicas/licencia-de-acn-md',
+              linkText: 'Licencia de ACN MD',
+            },
+            {
+              id: `3.1.2`,
+              link: '/services/licencia-medicas/licencia-de-acnpa',
+              linkText: 'Licencia de ACNPA',
+            },
+            {
+              id: `3.1.3`,
+              link: '/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration',
+              linkText: 'Licencia Out of State Telehealth Provider Registration',
+            },
+            {
+              id: `3.1.4`,
+              link: '/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement',
+              linkText: 'Licencia Medical Doctor by MOBILE Endorsement',
+            },
+            {
+              id: `3.1.5`,
+              link: '/services/licencia-medicas/licencia-por-examinacion',
+              linkText: 'Licencia por Examinación',
+            },
+          ],
         },
         {
           id: 3.2,
-          link: '/services/medical-practices',
-          linkText: 'Prácticas Médicas',
+          link: '/services/reclutamiento',
+          linkText: 'Reclutamiento',
+        },
+        {
+          id: 3.3,
+          link: '/services/facturacion',
+          linkText: 'Facturacion',
+        },
+        {
+          id: 3.4,
+          link: '/services/labendoc',
+          linkText: 'LabEndoc',
+        },
+        {
+          id: 3.5,
+          link: '/services/marketing-and-branding',
+          linkText: 'Marketing and branding',
         },
       ],
     },
@@ -102,6 +188,88 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
       linkText: 'Blog',
     },
   ];
+
+  // public navigation_en: Array<any> = [
+  //   {
+  //     id: 1,
+  //     link: '/',
+  //     linkText: 'Home',
+  //   },
+  //   {
+  //     id: 2,
+  //     link: '/about-us',
+  //     linkText: 'About us',
+  //   },
+  //   {
+  //     id: 3,
+  //     link: '/services',
+  //     linkText: 'Services',
+  //     child: true,
+  //     submenu: [
+  //       {
+  //         id: 3.1,
+  //         link: '/services/health-care-providers',
+  //         linkText: 'Health Care Providers',
+  //       },
+  //       {
+  //         id: 3.2,
+  //         link: '/services/medical-practices',
+  //         linkText: 'Medical Practices',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     link: '/medical-investments',
+  //     linkText: 'Investments',
+  //   },
+  //   {
+  //     id: 5,
+  //     link: '/blog',
+  //     linkText: 'Blog',
+  //   },
+  // ];
+
+  // public navigation_es: Array<any> = [
+  //   {
+  //     id: 1,
+  //     link: '/',
+  //     linkText: 'Inicio',
+  //   },
+  //   {
+  //     id: 2,
+  //     link: '/about-us',
+  //     linkText: 'Nosotros',
+  //   },
+  //   {
+  //     id: 3,
+  //     link: '/services',
+  //     linkText: 'Servicios',
+  //     child: true,
+  //     submenu: [
+  //       {
+  //         id: 3.1,
+  //         link: '/services/health-care-providers',
+  //         linkText: 'Proveedores de Servicios',
+  //       },
+  //       {
+  //         id: 3.2,
+  //         link: '/services/medical-practices',
+  //         linkText: 'Prácticas Médicas',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     link: '/medical-investments',
+  //     linkText: 'Inversiones',
+  //   },
+  //   {
+  //     id: 5,
+  //     link: '/blog',
+  //     linkText: 'Blog',
+  //   },
+  // ];
 
   public navmethod: boolean = false;
 

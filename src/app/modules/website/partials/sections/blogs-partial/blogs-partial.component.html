@@ -26,7 +26,8 @@
           data-wow-duration="1500ms"
         >
           <div class="blog-one__single-img">
-            <img [src]="item.image[0]" [alt]="item.title" />
+            <!-- <img [src]="item.image[0]" [alt]="item.title" /> -->
+            <img [src]="item.image[0]" alt="'title'" />
             <div class="overlay-icon">
               <a routerLink="/blog-details/{{ item.id }}"
                 ><span class="icon-plus"></span

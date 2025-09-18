@@ -20,13 +20,15 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
   public banner: any = {};
 
   public banner_en: any = {
-    title: 'Our Services',
+    title: 'Choose the service you need',
     image: 'assets/mlf/img/banners/services.jpg',
+    subtitle: 'Our service areas',
   };
 
   public banner_es: any = {
-    title: 'Nuestros Servicios',
+    title: 'Escoge el servicio que necesitas',
     image: 'assets/mlf/img/banners/services.jpg',
+    subtitle: 'Nuestras áreas de servicios',
   };
 
   constructor(private _translate: TranslateService) {

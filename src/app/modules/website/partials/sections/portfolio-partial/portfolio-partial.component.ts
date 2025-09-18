@@ -31,7 +31,7 @@ export class PortfolioPartialComponent implements OnInit, OnDestroy {
 
   public services: Array<any> = [];
 
-  public services_en: Array<any> = [
+public services_en: Array<any> = [
     {
       id: 1,
       title: 'Healthcare providers',
@@ -84,6 +84,60 @@ export class PortfolioPartialComponent implements OnInit, OnDestroy {
         'La práctica médica incluirá cualquier forma de organización en la que se presten servicios a los pacientes de la práctica médica o de otros médicos.',
     },
   ];
+
+  // public services_en: Array<any> = [
+  //   {
+  //     id: 1,
+  //     title: 'Healthcare providers',
+  //     image: 'assets/mlf/img/portfolio/p1.png',
+  //     icon: 'assets/mlf/img/portfolio/i1.png',
+  //     backgroud_color: '#dde3fc80',
+  //     color: '#496068',
+  //     cta1: `READ MORE`,
+  //     route: ['/services/health-care-providers'],
+  //     shorttext:
+  //       'A Health Care Provider is a professional licensed to provide diagnostic and treatment health care services, including drugs, surgery and medical devices.',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Medical Practice',
+  //     image: 'assets/mlf/img/portfolio/p2.png',
+  //     icon: 'assets/mlf/img/portfolio/i2.png',
+  //     backgroud_color: '#004482',
+  //     color: '#ffffff',
+  //     cta1: `READ MORE`,
+  //     route: ['/services/medical-practices'],
+  //     shorttext:
+  //       'Medical practice shall include any form of organization in which services are provided to patients of the medical practice or of other physicians.',
+  //   },
+  // ];
+
+  // public services_es: Array<any> = [
+  //   {
+  //     id: 1,
+  //     title: 'Proveedores de Salud',
+  //     image: 'assets/mlf/img/portfolio/p1.png',
+  //     icon: 'assets/mlf/img/portfolio/i1.png',
+  //     backgroud_color: '#dde3fc80',
+  //     color: '#496068',
+  //     cta1: `SABER MÁS`,
+  //     route: ['/services/health-care-providers'],
+  //     shorttext:
+  //       'Un proveedor de Salud es un profesional con licencia para brindar servicios de atención médica de diagnóstico y tratamiento, incluidos medicamentos, cirugía y dispositivos médicos.',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Practica Médica',
+  //     image: 'assets/mlf/img/portfolio/p2.png',
+  //     icon: 'assets/mlf/img/portfolio/i2.png',
+  //     backgroud_color: '#004482',
+  //     color: '#ffffff',
+  //     cta1: `SABER MÁS`,
+  //     route: ['/services/medical-practices'],
+  //     shorttext:
+  //       'La práctica médica incluirá cualquier forma de organización en la que se presten servicios a los pacientes de la práctica médica o de otros médicos.',
+  //   },
+  // ];
 
   constructor(public _router: Router, private _translate: TranslateService) {
     console.log('PortfolioPartialComponent constructor');

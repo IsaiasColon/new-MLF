@@ -18,11 +18,8 @@
           <div *ngFor="let item of items">
             <div class="blog-standard-one__single">
               <div class="blog-standard-one__single-img">
-                <img
-                  [src]="item.image"
-                  [alt]="'Image'"
-                  onerror="this.onerror=null; this.src='assets/mlf/img/no-img-avatar.png'"
-                />
+                <!-- <img [src]="item.image" [alt]="'Image'" onerror="this.onerror=null; this.src='assets/mlf/img/no-img-avatar.png'"/> -->
+                <img [src]="item.image" alt="'Image'" onerror="this.onerror=null; this.src='assets/mlf/img/no-img-avatar.png'"/>
               </div>
               <ul class="meta-info list-unstyled">
                 <li>

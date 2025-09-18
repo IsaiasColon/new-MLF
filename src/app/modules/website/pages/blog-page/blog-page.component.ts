@@ -25,7 +25,7 @@ export class BlogPageComponent implements OnInit, OnDestroy {
   };
 
   public banner_es: any = {
-    title: 'Blog',
+    title: 'Noticias',
     image: 'assets/mlf/img/banners/blog.png',
   };
 

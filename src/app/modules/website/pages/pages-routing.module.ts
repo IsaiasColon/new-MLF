@@ -78,6 +78,41 @@ const routes: Routes = [
           ).then((m) => m.MedicalPracticesPageModule),
       },
       {
+        path: 'services/licencia-medicas',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/licencia-medicas-page.module'
+          ).then((m) => m.LicenciaMedicasPageModule),
+      },
+      {
+        path: 'services/licencia-medicas/:slug',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-details-page/licencia-medicas-details-page.module'
+          ).then((m) => m.LicenciaMedicasDetailsPageModule),
+      },
+      {
+        path: 'services/reclutamiento',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/reclutamiento-page/reclutamiento-page.module'
+          ).then((m) => m.ReclutamientoPageModule),
+      },
+      {
+        path: 'services/facturacion',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/facturacion-page/facturacion-page.module'
+          ).then((m) => m.FacturacionPageModule),
+      },
+      {
+        path: 'services/marketing-and-branding',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/marketing-and-branding-page/marketing-and-branding-page.module'
+          ).then((m) => m.MarketingAndBrandingPageModule),
+      },
+      {
         path: 'medical-investments',
         loadChildren: () =>
           import(
@@ -90,6 +125,13 @@ const routes: Routes = [
           import(
             'src/app/modules/website/pages/medical-investments-details-page/medical-investments-details-page.module'
           ).then((m) => m.MedicalInvestmentsDetailsPageModule),
+      },
+      {
+        path: 'our-projects',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/our-projects-page/our-projects-page.module'
+          ).then((m) => m.OurProjectsPageModule),
       },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
