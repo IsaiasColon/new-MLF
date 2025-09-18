@@ -3,3 +3,72 @@
   [image]="banner.image"
   [subtitle]="banner.subtitle"
 ></app-banner-with-title-partial>
+
+
+<section class="case-studies-two">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="case-studies-two__wrapper">
+          <div class="row">
+            <!--Start Single Case Studies Two-->
+            <div
+              class="col-xl-6 col-lg-6 col-md-12 col-sm-12"
+              *ngFor="let item of services">
+              <div class="case-studies-two__single">
+                <div
+                  class="case-studies-two__single-text-box"
+                  [style.background]="item.backgroud_color"
+                  style="min-height: 300px">
+                  <div
+                    class="case-studies-two__single-left"
+                    [style.color]="item.color"
+                  >
+                    <h2 [style.color]="item.color">{{ item.title }}</h2>
+                    <hr />
+                    <p style="margin-bottom: 15px">{{ item.shorttext }}</p>
+                    <a href="javascript:void(0)" [routerLink]="item.route">
+                      {{ item.cta1 }}
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="case-studies-two__single-right"></div>
+                </div>
+                <!-- <div class="case-studies-two__single-img">
+                  <img [src]="item['image']" [alt]="item['title']" />
+                  <img [src]="item['icon']" [alt]="item['title']" class="icon" />
+                </div> -->
+              </div>
+            </div>
+            <!--End Single Case Studies Two-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-lg-3 col-lg-6 col-12">
+        <div class="section-title text-center">
+          <div class="section-title__tagline">
+            <!-- <span class="left"></span>
+            <h4>{{ data.subtitle }}</h4>
+            <span class="right"></span> -->
+          </div>
+
+          <h2 class="section-title__title mb-4">
+            Tu camino hacia el éxito comienza aquí.
+          </h2>
+          <p>
+            ¿Necesitas asesoría para obtener tu licencia, mejorar la gestión de tu práctica o expandir tu alcance? Nuestro equipo está listo para ayudarte.
+          </p>
+          <div class="cta-one__btn-box">
+            <a href="https://calendly.com/comunicaciones-licenciasmedica/asesoria-en-licenciamiento-medico" target="_blank" class="thm-btn btn-cta mt-4 mb-2" rel="noopener noreferrer">
+              Agenda una llamada
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
