@@ -1,0 +1,129 @@
+.main-slider {
+    margin-top: 100px;
+    height: 280px;
+}
+
+.main-slider .swiper-slide{
+    padding-bottom: 90px;
+}
+
+.main-slider .container {
+    padding-top: 200px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}   
+
+.main-slider__content .section-title {
+    // background-color: red;
+    width: 65%;
+    text-align: center;    
+    margin: auto;
+}
+
+.main-slider__content .section-title__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24pt;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+}
+
+.main-slider .main-slider__content {
+    margin-top: -120px;
+}
+
+.main-slider .image-layer {
+    top: 0;
+    background-size: cover;
+    background: rgba(0, 31, 60, 0.8);
+}
+
+.main-slider .image-layer-overlay {
+    background: rgba(0, 31, 60, 1);
+    opacity: 0.80;
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-slider .main-slider__content {
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-slider .main-slider__content {
+        margin-top: -160px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-slider .main-slider__content {
+        margin-top: -180px;
+    }
+}
+
+.main-slider__content .section-title__subtitle {    
+    color: #FFFFFF;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.mlf-section {
+      background: #fff;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      color: #000;
+    //   max-width: 1300px;
+      margin: 0 auto;
+
+      width: 90%;
+    }
+    .mlf-section h2,
+    .mlf-section h3 {
+      color: #003366;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .mlf-section .intro p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .mlf-section ul {
+      list-style: disc inside;
+      margin-left: 20px;
+      line-height: 1.6;
+      padding: 0;
+    }
+    .mlf-section ul li {
+      margin-bottom: 10px;
+    }
+    .mlf-section .cta {
+      text-align: center;
+      background: #f0f8ff;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-radius: 6px;
+    }
+    .mlf-section .cta h2 {
+      margin-bottom: 10px;
+    }
+    .mlf-section .cta p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .mlf-section .cta-button {
+      display: inline-block;
+      background: #0d6efd;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }

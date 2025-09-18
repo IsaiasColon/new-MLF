@@ -1,0 +1,51 @@
+.mbs-section {
+  background: #fff;
+  padding: 40px;
+//   max-width: 800px;
+    width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+.mbs-section h2,
+.mbs-section h3 {
+  color: #003366;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.mbs-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.mbs-section ul {
+  list-style: disc inside;
+  padding: 0;
+  margin-left: 20px;
+}
+.mbs-section ul li {
+  margin-bottom: 10px;
+}
+.mbs-section .cta {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+.mbs-section .cta h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+.mbs-section .cta p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+.mbs-section .cta-button {
+  display: inline-block;
+  background: #6f42c1;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
