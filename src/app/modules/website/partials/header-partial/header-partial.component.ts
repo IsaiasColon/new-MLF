@@ -47,27 +47,27 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
             {
               id: `3.1.1`,
               link: '/services/licencia-medicas/licencia-de-acn-md',
-              linkText: 'Licencia de ACN MD',
+              linkText: 'ACN MD License',
             },
             {
               id: `3.1.2`,
               link: '/services/licencia-medicas/licencia-de-acnpa',
-              linkText: 'Licencia de ACNPA',
+              linkText: 'ACNPA License',
             },
             {
               id: `3.1.3`,
               link: '/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration',
-              linkText: 'Licencia Out of State Telehealth Provider Registration',
+              linkText: 'Out of State Telehealth Provider Registration License',
             },
             {
               id: `3.1.4`,
               link: '/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement',
-              linkText: 'Licencia Medical Doctor by MOBILE Endorsement',
+              linkText: 'Medical Doctor by MOBILE Endorsement License',
             },
             {
               id: `3.1.5`,
               link: '/services/licencia-medicas/licencia-por-examinacion',
-              linkText: 'Licencia por Examinación',
+              linkText: 'License by Examination',
             },
           ],
         },
@@ -81,11 +81,11 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
           link: '/services/facturacion',
           linkText: 'Billing',
         },
-        {
-          id: 3.4,
-          link: 'https://www.labendoc.com/',
-          linkText: 'LabEndoc',
-        },
+        // {
+        //   id: 3.4,
+        //   link: 'https://www.labendoc.com/',
+        //   linkText: 'LabEndoc',
+        // },
         {
           id: 3.5,
           link: '/services/marketing-and-branding',
@@ -141,12 +141,12 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
             {
               id: `3.1.3`,
               link: '/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration',
-              linkText: 'Licencia Out of State Telehealth Provider Registration',
+              linkText: 'Licencia - Out of State Telehealth Provider Registration',
             },
             {
               id: `3.1.4`,
               link: '/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement',
-              linkText: 'Licencia Medical Doctor by MOBILE Endorsement',
+              linkText: 'Licencia - Medical Doctor by MOBILE Endorsement',
             },
             {
               id: `3.1.5`,
@@ -165,11 +165,11 @@ export class HeaderPartialComponent implements OnInit, OnDestroy {
           link: '/services/facturacion',
           linkText: 'Facturacion',
         },
-        {
-          id: 3.4,
-          link: '/services/labendoc',
-          linkText: 'LabEndoc',
-        },
+        // {
+        //   id: 3.4,
+        //   link: 'https://www.labendoc.com/',
+        //   linkText: 'LabEndoc',
+        // },
         {
           id: 3.5,
           link: '/services/marketing-and-branding',

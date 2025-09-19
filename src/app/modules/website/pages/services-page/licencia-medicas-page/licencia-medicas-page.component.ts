@@ -36,12 +36,77 @@ export class LicenciaMedicasPageComponent implements OnInit {
   public services_en: Array<any> = [
     {
       id: 1,
-      title: 'Licencia de ACN MD',
+      title: 'ACN MD License',
       image: 'assets/mlf/img/portfolio/p1.png',
       icon: 'assets/mlf/img/portfolio/i1.png',
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `READ MORE`,
+      route: ['/services/licencia-medicas/licencia-de-acn-md'],
+      shorttext:
+        'It allows U.S.-licensed physicians to practice in Critical Need Areas in Florida, without requiring postgraduate training or the USMLE. It applies only to areas with physician shortages, such as approved clinics and hospitals. Medical License Factory can assist you with the process.',
+    },
+    {
+      id: 2,
+      title: 'ACNPA License',
+      image: 'assets/mlf/img/portfolio/p2.png',
+      icon: 'assets/mlf/img/portfolio/i2.png',
+      backgroud_color: '#dde3fc80',
+      color: '#312937',
+      // backgroud_color: '#004482',
+      // color: '#ffffff',
+      cta1: `READ MORE`,
+      route: ['/services/licencia-medicas/licencia-de-acnpa'],
+      shorttext:
+        'For Physician Assistants (PAs) licensed in the U.S. who want to work in Critical Need Areas in Florida. Requires recent experience and supervision by a physician licensed in the state. License renewable every two years. Medical License Factory makes your application easy.',
+    },
+    {
+      id: 3,
+      title: 'Out of State Telehealth Provider Registration License',
+      image: 'assets/mlf/img/portfolio/p2.png',
+      icon: 'assets/mlf/img/portfolio/i2.png',
+      backgroud_color: '#dde3fc80',
+      color: '#312937',
+      cta1: `READ MORE`,
+      route: ['/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration'],
+      shorttext:
+        'Allows U.S.-licensed healthcare professionals to offer telemedicine in Florida without physical presence. Requires an active license, liability insurance, and state registration. Medical License Factory guides you through the application process.',
+    },
+    {
+      id: 4,
+      title: 'Medical Doctor by MOBILE Endorsement License',
+      image: 'assets/mlf/img/portfolio/p2.png',
+      icon: 'assets/mlf/img/portfolio/i2.png',
+      backgroud_color: '#dde3fc80',
+      color: '#312937',
+      cta1: `READ MORE`,
+      route: ["/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement"],
+      shorttext:
+        'Allows physicians licensed in the U.S. to practice in Florida without geographic restrictions. Requires a passing USMLE or Medical Board certification, and three years of recent experience. Medical License Factory streamlines your process.',
+    },
+    {
+      id: 5,
+      title: 'License by Examination',
+      image: 'assets/mlf/img/portfolio/p2.png',
+      icon: 'assets/mlf/img/portfolio/i2.png',
+      backgroud_color: '#dde3fc80',
+      color: '#312937',
+      cta1: `READ MORE`,
+      route: ['/services/licencia-medicas/licencia-por-examinacion'],
+      shorttext:
+        'Obtain your license to practice in Florida by meeting the requirements established for physicians who graduated abroad.',
+    },
+  ];
+
+  public services_es: Array<any> = [
+    {
+      id: 1,
+      title: 'Licencia de ACN MD',
+      image: 'assets/mlf/img/portfolio/p1.png',
+      icon: 'assets/mlf/img/portfolio/i1.png',
+      backgroud_color: '#dde3fc80',
+      color: '#312937',
+      cta1: `SABER MÁS`,
       route: ['/services/licencia-medicas'],
       shorttext:
         'Permite a médicos con licencia en EE.UU. ejercer en Áreas de Necesidad Crítica en Florida, sin necesidad de postgraduate training ni USMLE. Aplica solo para zonas con escasez de médicos, como clínicas y hospitales aprobados. Medical License Factory te asesora en el proceso.',
@@ -55,31 +120,31 @@ export class LicenciaMedicasPageComponent implements OnInit {
       color: '#312937',
       // backgroud_color: '#004482',
       // color: '#ffffff',
-      cta1: `READ MORE`,
+      cta1: `SABER MÁS`,
       route: ['/services/reclutamiento'],
       shorttext:
         'Para Physician Assistants (PAs) con licencia en EE.UU. que quieran trabajar en Áreas de Necesidad Crítica en Florida. Requiere experiencia reciente y supervisión de un médico con licencia en el estado. Licencia renovable cada dos años. Medical License Factory facilita tu aplicación.',
     },
     {
       id: 3,
-      title: 'Licencia Out of State Telehealth Provider Registration',
+      title: 'Licencia - Out of State Telehealth Provider Registration',
       image: 'assets/mlf/img/portfolio/p2.png',
       icon: 'assets/mlf/img/portfolio/i2.png',
       backgroud_color: '#dde3fc80',
       color: '#312937',
-      cta1: `READ MORE`,
+      cta1: `SABER MÁS`,
       route: ['/services/facturacion'],
       shorttext:
         'Permite a profesionales de la salud con licencia en EE.UU. ofrecer telemedicina en Florida sin presencia física. Requiere licencia activa, seguro de responsabilidad y registro estatal. Medical License Factory te guía en la solicitud.',
     },
     {
       id: 4,
-      title: 'Licencia Medical Doctor by MOBILE Endorsement',
+      title: 'Licencia - Medical Doctor by MOBILE Endorsement',
       image: 'assets/mlf/img/portfolio/p2.png',
       icon: 'assets/mlf/img/portfolio/i2.png',
       backgroud_color: '#dde3fc80',
       color: '#312937',
-      cta1: `READ MORE`,
+      cta1: `SABER MÁS`,
       route: ["https://www.labendoc.com/", "_blank"],
       shorttext:
         'Permite a médicos con licencia en EE.UU. ejercer en Florida sin restricciones geográficas. Requiere USMLE aprobado o certificación de Board Médico, y tres años de experiencia reciente. Medical License Factory agiliza tu proceso.',
@@ -91,75 +156,10 @@ export class LicenciaMedicasPageComponent implements OnInit {
       icon: 'assets/mlf/img/portfolio/i2.png',
       backgroud_color: '#dde3fc80',
       color: '#312937',
-      cta1: `READ MORE`,
+      cta1: `SABER MÁS`,
       route: ['/services/marketing-and-branding'],
       shorttext:
         'Obtén tu licencia para ejercer en Florida cumpliendo con los requisitos establecidos para médicos graduados en el extranjero.',
-    },
-  ];
-
-  public services_es: Array<any> = [
-    {
-      id: 1,
-      title: 'Licencias Médicas',
-      image: 'assets/mlf/img/portfolio/p1.png',
-      icon: 'assets/mlf/img/portfolio/i1.png',
-      backgroud_color: '#dde3fc80',
-      color: '#312937',
-      cta1: `READ MORE`,
-      route: ['/services/licencia-medicas'],
-      shorttext:
-        'Conoce más detalles sobre la obtención de licencias médicas en Florida, incluyendo opciones para médicos, asistentes médicos y telemedicina.',
-    },
-    {
-      id: 2,
-      title: 'Reclutamiento',
-      image: 'assets/mlf/img/portfolio/p2.png',
-      icon: 'assets/mlf/img/portfolio/i2.png',
-      backgroud_color: '#dde3fc80',
-      color: '#312937',
-      // backgroud_color: '#004482',
-      // color: '#ffffff',
-      cta1: `READ MORE`,
-      route: ['/services/reclutamiento'],
-      shorttext:
-        'Encuentra y contrata el talento médico ideal para tu institución con nuestro servicio de reclutamiento especializado.',
-    },
-    {
-      id: 3,
-      title: 'Facturación',
-      image: 'assets/mlf/img/portfolio/p2.png',
-      icon: 'assets/mlf/img/portfolio/i2.png',
-      backgroud_color: '#dde3fc80',
-      color: '#312937',
-      cta1: `READ MORE`,
-      route: ['/services/facturacion'],
-      shorttext:
-        'Optimiza los ingresos de tu consulta con un sistema eficiente de facturación médica y gestión de pagos.',
-    },
-    {
-      id: 4,
-      title: 'LabEndoc',
-      image: 'assets/mlf/img/portfolio/p2.png',
-      icon: 'assets/mlf/img/portfolio/i2.png',
-      backgroud_color: '#dde3fc80',
-      color: '#312937',
-      cta1: `READ MORE`,
-      route: ["https://www.labendoc.com/", "_blank"],
-      shorttext:
-        'Accede a servicios especializados en diagnóstico y laboratorio diseñados para mejorar la atención médica.',
-    },
-    {
-      id: 5,
-      title: 'Marketing y Branding',
-      image: 'assets/mlf/img/portfolio/p2.png',
-      icon: 'assets/mlf/img/portfolio/i2.png',
-      backgroud_color: '#dde3fc80',
-      color: '#312937',
-      cta1: `READ MORE`,
-      route: ['/services/marketing-and-branding'],
-      shorttext:
-        'Haz que tu práctica médica destaque con estrategias de marketing y branding personalizadas para el sector salud.',
     },
   ];
 
