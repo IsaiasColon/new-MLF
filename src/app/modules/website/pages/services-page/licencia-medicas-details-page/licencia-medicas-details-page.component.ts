@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-licencia-medicas-details-page',
   templateUrl: './licencia-medicas-details-page.component.html',
   styleUrls: ['./licencia-medicas-details-page.component.scss']
 })
-export class LicenciaMedicasDetailsPageComponent {
+export class LicenciaMedicasDetailsPageComponent implements OnInit {
 
   public banner: any = {};
 
@@ -16,15 +16,25 @@ export class LicenciaMedicasDetailsPageComponent {
   };
 
   public banner_es: any = {
-    title: 'Escoge la licencia que necesitas',
+    title: 'Licencia de ACN MD',
     image: 'assets/mlf/img/banners/services.jpg',
     subtitle: 'Nuestras áreas de servicios'
   };
 
-  constructor() { }
+   constructor() { }
 
   ngOnInit(): void {
-    this.banner = this.banner_es;
+    this.banner = this.banner_es; // Cambiar según el idioma actual
+   }
+
+  agendarAsesoria(): void {
+    // Implementar lógica para agendar asesoría
+    console.log('Agendando asesoría...');
+  }
+
+  solicitarPaquete(): void {
+    // Implementar lógica para solicitar paquete
+    console.log('Solicitando paquete de bienvenida...');
   }
   
 }

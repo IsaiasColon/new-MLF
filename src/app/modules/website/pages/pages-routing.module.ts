@@ -84,12 +84,47 @@ const routes: Routes = [
             'src/app/modules/website/pages/services-page/licencia-medicas-page/licencia-medicas-page.module'
           ).then((m) => m.LicenciaMedicasPageModule),
       },
+      // {
+      //   path: 'services/licencia-medicas/:slug',
+      //   loadChildren: () =>
+      //     import(
+      //       'src/app/modules/website/pages/services-page/licencia-medicas-details-page/licencia-medicas-details-page.module'
+      //     ).then((m) => m.LicenciaMedicasDetailsPageModule),
+      // },
       {
-        path: 'services/licencia-medicas/:slug',
+        path: 'services/licencia-medicas/licencia-de-acn-md',
         loadChildren: () =>
           import(
-            'src/app/modules/website/pages/services-page/licencia-medicas-details-page/licencia-medicas-details-page.module'
-          ).then((m) => m.LicenciaMedicasDetailsPageModule),
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/acn-md-page/acn-md-page.module'
+          ).then((m) => m.AcnMdPageModule),
+      },
+      {
+        path: 'services/licencia-medicas/licencia-de-acnpa',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/acnpa-page/acnpa-page.module'
+          ).then((m) => m.AcnpaPageModule),
+      },
+      {
+        path: 'services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/out-of-state-page/out-of-state-page.module'
+          ).then((m) => m.OutOfStatePageModule),
+      },
+      {
+        path: 'services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/medical-doctor-page/medical-doctor-page.module'
+          ).then((m) => m.MedicalDoctorPageModule),
+      },
+      {
+        path: 'services/licencia-medicas/licencia-por-examinacion',
+        loadChildren: () =>
+          import(
+            'src/app/modules/website/pages/services-page/licencia-medicas-page/examination-page/examination-page.module'
+          ).then((m) => m.ExaminationPageModule),
       },
       {
         path: 'services/reclutamiento',

@@ -3,3 +3,66 @@
   [image]="banner.image"
   [subtitle]="banner.subtitle"
 ></app-banner-with-title-partial>
+
+<div class="container py-5">
+  <!-- Sección: ¿Quién puede aplicar? -->
+  <section class="mb-5">
+    <h2 class="mb-4">¿Quién puede aplicar?</h2>
+    <p class="text-muted">
+      Florida te ofrece la opción de obtener una licencia para trabajar en áreas definidas como con necesidades críticas, las que no necesariamente están en zonas rurales. En casi todos los condados de Florida, incluyendo las principales, existen áreas establecidas bajo esta categoría.
+    </p>
+    <p class="text-muted">
+      Para que puedas evaluar si esta opción es adecuada para ti, toma en cuenta que si eres un médico licenciado y te interesa trabajar en Florida, deberías aplicar únicamente en los lugares aprobados que se encuentran en áreas de Critical Needs.
+    </p>
+  </section>
+
+  <!-- Sección: Imágenes de doctores -->
+  <section class="row mb-5">
+    <div class="col-md-6">
+      <img src="assets/mlf/img/pictures/Medico-2.jpg" alt="Doctora trabajando" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <img src="assets/mlf/img/pictures/Medico-1.jpg" alt="Doctor revisando documentos" class="img-fluid rounded shadow">
+    </div>
+  </section>
+
+  <!-- Sección: Lugares aprobados -->
+  <section class="mb-5">
+    <h2 class="mb-4">Lugares aprobados</h2>
+    <p class="text-muted">
+      Solo podrá operar en instalaciones aprobadas en Florida que se encuentren en comunidades con una necesidad crítica de médicos. Estos lugares incluyen:
+    </p>
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <i class="fas fa-check-circle text-primary me-2"></i>
+        Áreas de designadas como con necesidades críticas, instalaciones educativas en áreas designadas como de necesidad crítica en atención primaria y salud mental (HPSA), según lo definido por el Departamento de Salud y Servicios Humanos de EE. UU.
+      </li>
+      <li class="mb-3">
+        <i class="fas fa-check-circle text-primary me-2"></i>
+        Instituciones gubernamentales, prisiones y clínicas de veteranos
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sección: En resumen -->
+  <section class="mb-5">
+    <h2 class="mb-4">En resumen</h2>
+    <p class="text-muted">
+      Al cumplir con los requisitos mencionados, tendrás la oportunidad de brindar atención médica de calidad en entornos autorizados.
+    </p>
+    <p class="text-muted">
+      Nuestro objetivo es ayudarte a comprender de forma rápida si podrías calificar para una licencia en las áreas de Necesidad Crítica en Florida.
+    </p>
+  </section>
+
+  <!-- Botones de acción -->
+  <div class="d-flex gap-3 justify-content-center">
+    <button class="btn btn-primary" (click)="agendarAsesoria()">
+      Agenda una asesoría
+    </button>
+    <button class="btn btn-outline-dark" (click)="solicitarPaquete()">
+      Solicitar paquete de bienvenida
+    </button>
+  </div>
+</div>
+
