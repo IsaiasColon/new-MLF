@@ -168,7 +168,7 @@ const routes: Routes = [
             'src/app/modules/website/pages/our-projects-page/our-projects-page.module'
           ).then((m) => m.OurProjectsPageModule),
       },
-      // { path: '**', redirectTo: '', pathMatch: 'full' },
+      { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
   },
 ];

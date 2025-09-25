@@ -45,7 +45,7 @@
                   </ul>
                 </li>
 
-                <div *ngIf="canLanguageSwitch">
+                <ng-container *ngIf="canLanguageSwitch">
 
                   <li *ngIf="currentLang === 'en'" class="dropdown">
                   <a href="javascript:void(0)">
@@ -73,7 +73,7 @@
                   </ul>
                 </li>
 
-                </div>
+                </ng-container>
                 
               </ul>
             </div>
@@ -107,7 +107,7 @@
       <a href="javascript:void(0)" class="mobile-nav__toggler" (click)="toggleNav()"><i class="fa fa-bars"></i></a>
       <div class="middle">
         <ul class="main-menu__list">
-          <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
+          <!-- <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
             <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span class="nav_arrow"></span></a>
             <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
               item.linkText
@@ -125,9 +125,36 @@
                 </ul>
               </li>
             </ul>
+          </li> -->
+          <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
+            <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span
+                class="nav_arrow"></span></a>
+            <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
+              item.linkText
+              }}</a>
+            <ul class="sub-menu" *ngIf="!!item.child">
+              <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of item.submenu">
+                <a routerLink="{{ item.link }}" *ngIf="!!item.child">
+                  {{ item.linkText }}<span class="nav_arrow"></span>
+                </a>
+                <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
+                  item.linkText
+                  }}</a>
+                <ul class="sub-menu" *ngIf="!!item.child">
+                  <li *ngFor="let item of item.submenu">
+                    <a routerLink="{{ item.link }}">{{
+                      item.linkText
+                      }}</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.labendoc.com/" target="_blank" rel="noopener noreferrer">LabEndoc</a>
+              </li>
+            </ul>
           </li>
 
-          <div *ngIf="canLanguageSwitch">
+          <ng-container *ngIf="canLanguageSwitch">
             <li *ngIf="currentLang === 'en'" class="dropdown">
             <a href="javascript:void(0)">
               ENG
@@ -153,7 +180,7 @@
               </li>
             </ul>
           </li>
-          </div>
+          </ng-container>
           
         </ul>
         <div class="main-menu__right mx-5">

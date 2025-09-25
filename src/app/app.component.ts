@@ -44,14 +44,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
     console.log('AppComponent constructor hostname', hostname);
 
-    if (hostname.includes('medicalicensefactory.com')) {
-      lang = 'en';
-    } else if (hostname.includes('licenciasmedica.com')) {
-      lang = 'es';
-    } else {
-      // lang = 'en';
-      lang = 'es';
-    }
+    // if (hostname.includes('medicalicensefactory.com')) {
+    //   lang = 'en';
+    // } else if (hostname.includes('licenciasmedica.com')) {
+    //   lang = 'es';
+    // } else {
+    //   lang = 'en';
+    // }
 
     console.log('AppComponent constructor lang', lang);
 
