@@ -1,0 +1,45 @@
+{
+  "slug": "licencias-medicas-estados-unidos-sin-complicaciones",
+  "title": "Licencias médicas en Estados Unidos sin complicaciones",
+  "description": "Guía paso a paso para obtener tu licencia médica en Estados Unidos de manera sencilla y sin complicaciones innecesarias.",
+  "date": "2024-01-06",
+  "author": "Medical License Factory",
+  "featuredImage": "assets/mlf/img/posts/003.png",
+  "url": "https://medicalicensefactory.com/blog/licencias-medicas-estados-unidos-sin-complicaciones",
+  "content": {
+    "paragraphs": [
+      "El proceso de obtención de licencias médicas en Estados Unidos puede parecer abrumador, pero con la orientación correcta puede ser mucho más sencillo.",
+      "Muchos médicos extranjeros se sienten perdidos en el laberinto de requisitos, formularios y procedimientos.",
+      "Esta guía te llevará paso a paso a través del proceso, simplificando cada etapa para que puedas obtener tu licencia sin complicaciones."
+    ],
+    "lists": [
+      {
+        "type": "ol",
+        "items": [
+          "Verificación de credenciales educativas",
+          "Preparación y presentación de exámenes USMLE",
+          "Aplicación a programas de residencia",
+          "Obtención de visa de trabajo",
+          "Aplicación final para la licencia médica"
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": 2,
+        "text": "Proceso Simplificado"
+      },
+      {
+        "level": 3,
+        "text": "Paso 1: Verificación de Credenciales"
+      }
+    ],
+    "images": [
+      {
+        "src": "assets/mlf/img/posts/003.png",
+        "alt": "Médicos preocupados"
+      }
+    ]
+  },
+  "extractedAt": "2025-09-25T13:56:32.903Z"
+}

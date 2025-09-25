@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": 1,
+    "title": "Evolving Program Manage Office For Modern",
+    "format": "standard",
+    "postdate": "17 June 2021",
+    "image": ["assets/template/images/blog/blog-v1-img1.jpg"],
+    "category": [1, 2],
+    "tags": [1, 2, 3, 4],
+    "author": [1],
+    "shorttext": "But must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and will give complete account of the system and expound",
+    "htmltext": "<div class='blog-details__text1'><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p></div><div class='blockquote-box'><blockquote><h3>Smashing Podcast Episode With Paul Boag Conversion Optimization Inspired Design Decisions</h3><p>Bailey Dobson</p></blockquote></div><div class='blog-details__text2'><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p></div>",
+    "reviews": [
+      {
+        "user": [1],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": [
+          {
+            "user": [2],
+            "commentdate": "21 June 2021",
+            "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+          }
+        ]
+      },
+      {
+        "user": [3],
+        "commentdate": "20 June 2021",
+        "comment": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant ium doloremque laudantium, totam rem aperiam,",
+        "replies": []
+      }
+    ]
+  } 
+] 

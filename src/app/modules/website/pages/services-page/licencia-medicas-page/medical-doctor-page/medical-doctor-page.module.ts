@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MedicalDoctorPageRoutingModule } from './medical-doctor-page-routing.module';
 import { MedicalDoctorPageComponent } from './medical-doctor-page.component';
+import { BannerWithTitlePartialModule } from 'src/app/modules/website/partials/banner-with-title-partial/banner-with-title-partial.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MedicalDoctorPageComponent } from './medical-doctor-page.component';
   ],
   imports: [
     CommonModule,
-    MedicalDoctorPageRoutingModule
+    MedicalDoctorPageRoutingModule,
+    BannerWithTitlePartialModule
   ]
 })
 export class MedicalDoctorPageModule { }

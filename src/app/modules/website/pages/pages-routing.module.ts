@@ -21,13 +21,13 @@ const routes: Routes = [
             'src/app/modules/website/pages/about-us-page/about-us-page.module'
           ).then((m) => m.AboutUsPageModule),
       },
-      {
-        path: 'blog/preview/:uuid',
-        loadChildren: () =>
-          import(
-            'src/app/modules/website/pages/blog-details-page/blog-details-page.module'
-          ).then((m) => m.BlogDetailsPageModule),
-      },
+      // {
+      //   path: 'blog/preview/:uuid',
+      //   loadChildren: () =>
+      //     import(
+      //       'src/app/modules/website/pages/blog-details-page/blog-details-page.module'
+      //     ).then((m) => m.BlogDetailsPageModule),
+      // },
       {
         path: 'blog',
         loadChildren: () =>
@@ -35,15 +35,15 @@ const routes: Routes = [
             'src/app/modules/website/pages/blog-page/blog-page.module'
           ).then((m) => m.BlogPageModule),
       },
+      // {
+      //   path: 'blog/:page',
+      //   loadChildren: () =>
+      //     import(
+      //       'src/app/modules/website/pages/blog-details-page/blog-details-page.module'
+      //     ).then((m) => m.BlogDetailsPageModule),
+      // },
       {
-        path: 'blog/:page',
-        loadChildren: () =>
-          import(
-            'src/app/modules/website/pages/blog-page/blog-page.module'
-          ).then((m) => m.BlogPageModule),
-      },
-      {
-        path: 'blog-details/:slug',
+        path: 'blog/:slug',
         loadChildren: () =>
           import(
             'src/app/modules/website/pages/blog-details-page/blog-details-page.module'
@@ -168,7 +168,7 @@ const routes: Routes = [
             'src/app/modules/website/pages/our-projects-page/our-projects-page.module'
           ).then((m) => m.OurProjectsPageModule),
       },
-      { path: '**', redirectTo: '', pathMatch: 'full' },
+      // { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
   },
 ];

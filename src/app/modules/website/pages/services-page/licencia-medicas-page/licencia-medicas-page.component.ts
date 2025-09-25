@@ -20,7 +20,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
   public banner: any = {};
 
   public banner_en: any = {
-    title: 'Our Services',
+    title: 'choose the license you need',
     image: 'assets/mlf/img/banners/services.jpg',
     subtitle: 'Our Service Areas'
   };
@@ -107,7 +107,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `SABER MÁS`,
-      route: ['/services/licencia-medicas'],
+      route: ['/services/licencia-medicas/licencia-de-acn-md'],
       shorttext:
         'Permite a médicos con licencia en EE.UU. ejercer en Áreas de Necesidad Crítica en Florida, sin necesidad de postgraduate training ni USMLE. Aplica solo para zonas con escasez de médicos, como clínicas y hospitales aprobados. Medical License Factory te asesora en el proceso.',
     },
@@ -121,7 +121,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
       // backgroud_color: '#004482',
       // color: '#ffffff',
       cta1: `SABER MÁS`,
-      route: ['/services/reclutamiento'],
+      route: ['/services/licencia-medicas/licencia-de-acnpa'],
       shorttext:
         'Para Physician Assistants (PAs) con licencia en EE.UU. que quieran trabajar en Áreas de Necesidad Crítica en Florida. Requiere experiencia reciente y supervisión de un médico con licencia en el estado. Licencia renovable cada dos años. Medical License Factory facilita tu aplicación.',
     },
@@ -133,7 +133,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `SABER MÁS`,
-      route: ['/services/facturacion'],
+      route: ['/services/licencia-medicas/licencia-out-of-state-telehealth-provider-registration'],
       shorttext:
         'Permite a profesionales de la salud con licencia en EE.UU. ofrecer telemedicina en Florida sin presencia física. Requiere licencia activa, seguro de responsabilidad y registro estatal. Medical License Factory te guía en la solicitud.',
     },
@@ -145,7 +145,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `SABER MÁS`,
-      route: ["https://www.labendoc.com/", "_blank"],
+      route: ["/services/licencia-medicas/licencia-medical-doctor-by-mobile-endorsement"],
       shorttext:
         'Permite a médicos con licencia en EE.UU. ejercer en Florida sin restricciones geográficas. Requiere USMLE aprobado o certificación de Board Médico, y tres años de experiencia reciente. Medical License Factory agiliza tu proceso.',
     },
@@ -157,7 +157,7 @@ export class LicenciaMedicasPageComponent implements OnInit {
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `SABER MÁS`,
-      route: ['/services/marketing-and-branding'],
+      route: ['/services/licencia-medicas/licencia-por-examinacion'],
       shorttext:
         'Obtén tu licencia para ejercer en Florida cumpliendo con los requisitos establecidos para médicos graduados en el extranjero.',
     },

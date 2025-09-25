@@ -1,6 +1,116 @@
-<app-banner-with-title-partial
+<!-- <app-banner-with-title-partial
   [title]="banner.title"
   [image]="banner.image"
-></app-banner-with-title-partial>
+></app-banner-with-title-partial> -->
 
-<app-blog-details-partial></app-blog-details-partial>
+<!-- <app-blog-details-partial></app-blog-details-partial> -->
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-image">
+      <img [src]="data.heroImage" [alt]="data.heroImageAlt" />
+      <div class="hero-overlay">
+          <h1>{{ data.title }}</h1>
+      </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="blog-content">
+  <div class="content-wrapper">
+      <div class="main-article">
+          
+          <!-- INTRODUCCIÓN -->
+          <div class="article-intro">
+              <p *ngFor="let paragraph of data.introduction">{{ paragraph }}</p>
+          </div>
+
+          <!-- LAS 9 REALIDADES -->
+          <div class="realities-section">
+              <h2>Las 9 Realidades que Debes Conocer</h2>
+              
+              <div class="reality-item" *ngFor="let reality of data.realities">
+                  <h3>{{ reality.number }}. {{ reality.title }}</h3>
+                  <p>{{ reality.description }}</p>
+                  <ul>
+                      <li *ngFor="let point of reality.points">{{ point }}</li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- CONCLUSIÓN -->
+          <div class="article-conclusion">
+              <p *ngFor="let paragraph of data.conclusion">{{ paragraph }}</p>
+          </div>
+
+          <!-- CALL TO ACTION -->
+          <div class="cta-section">
+              <h3>{{ data.cta.title }}</h3>
+              <ul>
+                  <li *ngFor="let point of data.cta.points">{{ point }}</li>
+              </ul>
+          </div>
+
+          <!-- PROMOCIÓN DEL LIBRO -->
+          <div class="book-promotion">
+              <h3>{{ data.bookPromotion.title }}</h3>
+              <p>{{ data.bookPromotion.description }}</p>
+              <p><strong>"{{ data.bookPromotion.bookTitle }}"</strong></p>
+              <p>{{ data.bookPromotion.availability }} <a [href]="data.bookPromotion.linkUrl" class="book-link">{{ data.bookPromotion.linkText }}</a></p>
+          </div>
+
+          <!-- SOCIAL SHARING -->
+          <div class="social-sharing">
+              <h4>{{ data.socialSharing.title }}</h4>
+              <div class="social-buttons">
+                  <a *ngFor="let platform of data.socialSharing.platforms" 
+                     [href]="platform.url" 
+                     [class]="'social-btn ' + platform.class">
+                      {{ platform.name }}
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+          <div class="services-widget">
+              <h3>{{ data.sidebar.services.title }}</h3>
+              <ul>
+                  <li *ngFor="let service of data.sidebar.services.items">{{ service }}</li>
+              </ul>
+          </div>
+
+          <div class="newsletter-widget">
+              <h3>{{ data.sidebar.newsletter.title }}</h3>
+              <form class="newsletter-form">
+                  <input type="email" [placeholder]="data.sidebar.newsletter.placeholder" required>
+                  <button type="submit">{{ data.sidebar.newsletter.buttonText }}</button>
+              </form>
+              <p class="privacy-text">{{ data.sidebar.newsletter.privacyText }}</p>
+          </div>
+      </aside>
+  </div>
+</main>
+
+<!-- RELATED POSTS SECTION -->
+<section class="related-posts">
+  <div class="container">
+      <h2>También puede interesarte</h2>
+      <div class="posts-grid">
+          
+          <article class="related-post" *ngFor="let post of data.relatedPosts">
+              <div class="post-image">
+                  <img [src]="post.image" [alt]="post.imageAlt" />
+              </div>
+              <div class="post-content">
+                  <span class="post-date">{{ post.date }}</span>
+                  <h3>{{ post.title }}</h3>
+                  <p>{{ post.description }}</p>
+                  <a [href]="post.link" class="read-more">Leer más</a>
+              </div>
+          </article>
+
+      </div>
+  </div>
+</section>

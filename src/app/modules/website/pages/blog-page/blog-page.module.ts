@@ -1,17 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlogPageComponent } from 'src/app/modules/website/pages/blog-page/blog-page.component';
-import { BlogPageRoutingModule } from 'src/app/modules/website/pages/blog-page/blog-page-routing.module';
-import { BannerWithTitlePartialModule } from 'src/app/modules/website/partials/banner-with-title-partial/banner-with-title-partial.module';
-import { BlogStandardOnePartialModule } from 'src/app/modules/website/partials/sections/blog-standard-one-partial/blog-standard-one-partial.module';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+
+import { BlogPageComponent } from './blog-page.component';
+import { BlogService } from '../../services/blog.service';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: BlogPageComponent
+  }
+];
 
 @NgModule({
-  declarations: [BlogPageComponent],
+  declarations: [
+    BlogPageComponent
+  ],
   imports: [
     CommonModule,
-    BlogPageRoutingModule,
-    BannerWithTitlePartialModule,
-    BlogStandardOnePartialModule,
+    FormsModule,
+    RouterModule.forChild(routes)
   ],
+  providers: [
+    BlogService
+  ],
+  exports: [
+    BlogPageComponent
+  ]
 })
-export class BlogPageModule {}
+export class BlogPageModule { }

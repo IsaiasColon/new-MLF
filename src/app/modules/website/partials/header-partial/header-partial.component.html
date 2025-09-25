@@ -13,40 +13,29 @@
                 </a>
               </div>
             </div>
-            <a
-              href="javascript:void(0)"
-              class="mobile-nav__toggler"
-              (click)="toggleNav()"
-              ><i class="fa fa-bars"></i
-            ></a>
+            <a href="javascript:void(0)" class="mobile-nav__toggler" (click)="toggleNav()"><i
+                class="fa fa-bars"></i></a>
             <div class="middle">
               <ul class="main-menu__list">
-                <li
-                  [ngClass]="!!item.child === true ? 'dropdown' : ''"
-                  *ngFor="let item of navigation"
-                >
-                  <a routerLink="{{ item.link }}" *ngIf="!!item.child"
-                    >{{ item.linkText }}<span class="nav_arrow"></span
-                  ></a>
+                <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
+                  <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span
+                      class="nav_arrow"></span></a>
                   <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
                     item.linkText
-                  }}</a>
+                    }}</a>
                   <ul class="sub-menu" *ngIf="!!item.child">
-                    <li
-                      [ngClass]="!!item.child === true ? 'dropdown' : ''"
-                      *ngFor="let item of item.submenu"
-                    >
-                      <a routerLink="{{ item.link }}" *ngIf="!!item.child"
-                        >{{ item.linkText }}<span class="nav_arrow"></span
-                      ></a>
+                    <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of item.submenu">
+                      <a routerLink="{{ item.link }}" *ngIf="!!item.child">
+                        {{ item.linkText }}<span class="nav_arrow"></span>
+                      </a>
                       <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
                         item.linkText
-                      }}</a>
+                        }}</a>
                       <ul class="sub-menu" *ngIf="!!item.child">
                         <li *ngFor="let item of item.submenu">
                           <a routerLink="{{ item.link }}">{{
                             item.linkText
-                          }}</a>
+                            }}</a>
                         </li>
                       </ul>
                     </li>
@@ -56,17 +45,17 @@
                   </ul>
                 </li>
 
-                <li *ngIf="currentLang === 'en'" class="dropdown">
+                <div *ngIf="canLanguageSwitch">
+
+                  <li *ngIf="currentLang === 'en'" class="dropdown">
                   <a href="javascript:void(0)">
                     ENG
-                    <span class="nav_arrow"></span
-                  ></a>
+                    <span class="nav_arrow"></span></a>
                   <ul class="sub-menu">
                     <li class="dropdown">
                       <a href="javascript:void(0)" (click)="setLang('es')">
                         ESP
-                        <span class="nav_arrow"></span
-                      ></a>
+                        <span class="nav_arrow"></span></a>
                     </li>
                   </ul>
                 </li>
@@ -74,25 +63,23 @@
                 <li *ngIf="currentLang === 'es'" class="dropdown">
                   <a href="javascript:void(0)">
                     ESP
-                    <span class="nav_arrow"></span
-                  ></a>
+                    <span class="nav_arrow"></span></a>
                   <ul class="sub-menu">
                     <li class="dropdown">
                       <a href="javascript:void(0)" (click)="setLang('en')">
                         ENG
-                        <span class="nav_arrow"></span
-                      ></a>
+                        <span class="nav_arrow"></span></a>
                     </li>
                   </ul>
                 </li>
+
+                </div>
+                
               </ul>
             </div>
             <div class="right">
               <div class="main-menu__right">
-                <button
-                  [routerLink]="['/contact-us']"
-                  class="btn btn-primary btn-contact"
-                >
+                <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
                   {{ "general.contact_us" | translate }}
                 </button>
               </div>
@@ -105,10 +92,7 @@
   </div>
 </header>
 
-<div
-  class="stricky-header stricked-menu main-menu"
-  [ngClass]="windowScrolled ? 'stricky-fixed' : ''"
->
+<div class="stricky-header stricked-menu main-menu" [ngClass]="windowScrolled ? 'stricky-fixed' : ''">
   <div class="sticky-header__content">
     <!-- menu -->
     <div class="main-menu__inner">
@@ -120,35 +104,20 @@
           </a>
         </div>
       </div>
-      <a
-        href="javascript:void(0)"
-        class="mobile-nav__toggler"
-        (click)="toggleNav()"
-        ><i class="fa fa-bars"></i
-      ></a>
+      <a href="javascript:void(0)" class="mobile-nav__toggler" (click)="toggleNav()"><i class="fa fa-bars"></i></a>
       <div class="middle">
         <ul class="main-menu__list">
-          <li
-            [ngClass]="!!item.child === true ? 'dropdown' : ''"
-            *ngFor="let item of navigation"
-          >
-            <a routerLink="{{ item.link }}" *ngIf="!!item.child"
-              >{{ item.linkText }}<span class="nav_arrow"></span
-            ></a>
+          <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
+            <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span class="nav_arrow"></span></a>
             <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
               item.linkText
-            }}</a>
+              }}</a>
             <ul class="sub-menu" *ngIf="!!item.child">
-              <li
-                [ngClass]="!!item.child === true ? 'dropdown' : ''"
-                *ngFor="let item of item.submenu"
-              >
-                <a href="javascript:void(0)" *ngIf="!!item.child"
-                  >{{ item.linkText }}<span class="nav_arrow"></span
-                ></a>
+              <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of item.submenu">
+                <a href="javascript:void(0)" *ngIf="!!item.child">{{ item.linkText }}<span class="nav_arrow"></span></a>
                 <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
                   item.linkText
-                }}</a>
+                  }}</a>
                 <ul class="sub-menu" *ngIf="!!item.child">
                   <li *ngFor="let item of item.submenu">
                     <a routerLink="{{ item.link }}">{{ item.linkText }}</a>
@@ -158,17 +127,16 @@
             </ul>
           </li>
 
-          <li *ngIf="currentLang === 'en'" class="dropdown">
+          <div *ngIf="canLanguageSwitch">
+            <li *ngIf="currentLang === 'en'" class="dropdown">
             <a href="javascript:void(0)">
               ENG
-              <span class="nav_arrow"></span
-            ></a>
+              <span class="nav_arrow"></span></a>
             <ul class="sub-menu">
               <li class="dropdown">
                 <a href="javascript:void(0)" (click)="setLang('es')">
                   ESP
-                  <span class="nav_arrow"></span
-                ></a>
+                  <span class="nav_arrow"></span></a>
               </li>
             </ul>
           </li>
@@ -176,23 +144,20 @@
           <li *ngIf="currentLang === 'es'" class="dropdown">
             <a href="javascript:void(0)">
               ESP
-              <span class="nav_arrow"></span
-            ></a>
+              <span class="nav_arrow"></span></a>
             <ul class="sub-menu">
               <li class="dropdown">
                 <a href="javascript:void(0)" (click)="setLang('en')">
                   ENG
-                  <span class="nav_arrow"></span
-                ></a>
+                  <span class="nav_arrow"></span></a>
               </li>
             </ul>
           </li>
+          </div>
+          
         </ul>
         <div class="main-menu__right mx-5">
-          <button
-            [routerLink]="['/contact-us']"
-            class="btn btn-primary btn-contact"
-          >
+          <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
             {{ "general.contact_us" | translate }}
           </button>
         </div>
@@ -205,31 +170,20 @@
 <!-- /.stricky-header -->
 <!-- Search -->
 <div class="search-popup" [ngClass]="searchMethod ? 'active' : ''">
-  <div
-    class="search-popup__overlay search-toggler"
-    (click)="toggleSearch()"
-  ></div>
+  <div class="search-popup__overlay search-toggler" (click)="toggleSearch()"></div>
   <app-search-partial class="search-popup__content"></app-search-partial>
 </div>
 <!-- Search -->
 <!-- Mobilemenu -->
 <div class="mobile-nav__wrapper" [ngClass]="navmethod ? 'expanded' : ''">
-  <div
-    class="mobile-nav__overlay mobile-nav__toggler"
-    (click)="toggleNav()"
-  ></div>
+  <div class="mobile-nav__overlay mobile-nav__toggler" (click)="toggleNav()"></div>
   <!-- /.mobile-nav__overlay -->
   <div class="mobile-nav__content">
-    <span class="mobile-nav__close mobile-nav__toggler" (click)="toggleNav()"
-      ><i class="fa fa-times"></i
-    ></span>
+    <span class="mobile-nav__close mobile-nav__toggler" (click)="toggleNav()"><i class="fa fa-times"></i></span>
     <app-mobile-menu-partial></app-mobile-menu-partial>
   </div>
   <!-- /.mobile-nav__content -->
 </div>
 <!-- Mobilemenu -->
 
-<ngx-loading
-  [show]="loading"
-  [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"
-></ngx-loading>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"></ngx-loading>

@@ -1,1 +1,104 @@
-<p>acnpa-page works!</p>
+<app-banner-with-title-partial
+  [title]="banner.title"
+  [image]="banner.image"
+></app-banner-with-title-partial>
+
+<div class="container py-5">
+  <!-- Intro -->
+  <p>
+    Para Physician Assistants (PAs) que ya tienen licencia en otro estado de EE.UU. y desean trabajar en áreas de necesidad crítica en Florida, ejerciendo exclusivamente como PAs (no como médicos).
+  </p>
+
+  <!-- Propósito y Vigencia -->
+  <ul class="list-unstyled mb-4">
+    <li class="mb-2">
+      <i class="fas fa-check-circle text-primary me-2"></i>
+      <strong>Propósito:</strong> Cubrir vacíos urgentes de personal en zonas o especialidades con escasez.
+    </li>
+    <li>
+      <i class="fas fa-check-circle text-primary me-2"></i>
+      <strong>Vigencia:</strong> 2 años (renovable si se cumplen requisitos).
+    </li>
+  </ul>
+
+  <!-- Imágenes -->
+  <div class="row mb-5">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img src="assets/mlf/img/pictures/Medico-2.jpg" alt="Doctora trabajando" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <img src="assets/mlf/img/pictures/Medico-1.jpg" alt="Doctor revisando documentos" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <!-- ¿Quién puede aplicar? -->
+  <h5 class="fw-bold mb-3">¿Quién puede aplicar?</h5>
+  <ul>
+    <li>PAs con licencia activa en cualquier estado, territorio o jurisdicción de EE.UU. (sin sanciones disciplinarias).</li>
+    <li>Haber practicado como PA en algún momento de los últimos 3 años.</li>
+    <li>Oferta laboral en un área de necesidad crítica en Florida.</li>
+    <li>Médico supervisor: Debe tener licencia médica activa en Florida y supervisar su práctica.</li>
+  </ul>
+
+  <!-- Lugares aprobados -->
+  <h5 class="fw-bold mt-5 mb-3">Lugares aprobados</h5>
+  <ol>
+    <li>
+      <strong>Áreas de Necesidad Crítica:</strong>
+      <ul>
+        <li>Instituciones gubernamentales, prisiones y clínicas de veteranos.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Son zonas o especialidades designadas por:</strong>
+      <ul>
+        <li><em>Federales:</em>
+          <ul>
+            <li>Health Professional Shortage Areas (HPSA).</li>
+            <li>Medically Underserved Areas (MUA).</li>
+          </ul>
+        </li>
+        <li><em>Estatales (Florida):</em>
+          <ul>
+            <li>Especialidades con escasez (ej: atención primaria, salud mental, pediatría, medicina de emergencia)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- Requisitos básicos -->
+  <h5 class="fw-bold mt-5 mb-3">Requisitos básicos</h5>
+  <ul>
+    <li>
+      <strong>Documentación:</strong>
+      <ul>
+        <li>Verificación de licencia actual vigente, clara y activa</li>
+        <li>Carta del empleador detallando el puesto en área de necesidad crítica.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Antecedentes:</strong>
+      <ul>
+        <li>Huellas dactilares y verificación federal/estatal.</li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <!-- Botones de acción -->
+  <div class="row">
+    <div class="col-12 text-center">
+      <h4 class="mb-4">¿Tienes dudas? ¡Estamos aquí para ayudarte!</h4>
+      <div class="d-flex mt-5 text-center gap-3 justify-content-center">
+        <a href="https://calendar.app.google/PB4oYqgNRA2YRKd19" target="_blank" rel="noopener" class="btn btn-primary">
+          Agenda una asesoría
+        </a>
+        <a href="#" class="btn btn-outline-dark">
+          Solicitar paquete de bienvenida
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>

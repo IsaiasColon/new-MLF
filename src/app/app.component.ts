@@ -39,7 +39,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
     let hostname: string = window.location.hostname;
 
-    let lang: string = 'en';
+    // let lang: string = 'en';
+    let lang: string = 'es';
 
     console.log('AppComponent constructor hostname', hostname);
 
@@ -48,7 +49,8 @@ export class AppComponent implements OnInit, OnDestroy {
     } else if (hostname.includes('licenciasmedica.com')) {
       lang = 'es';
     } else {
-      lang = 'en';
+      // lang = 'en';
+      lang = 'es';
     }
 
     console.log('AppComponent constructor lang', lang);

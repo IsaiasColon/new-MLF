@@ -80,7 +80,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       backgroud_color: '#dde3fc80',
       color: '#312937',
       cta1: `READ MORE`,
-      route: ["https://www.labendoc.com/", "_blank"],
+      route: ["https://www.labendoc.com/"],
       shorttext:
         'Accede a servicios especializados en diagnóstico y laboratorio diseñados para mejorar la atención médica.',
     },

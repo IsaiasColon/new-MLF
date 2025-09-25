@@ -29,7 +29,7 @@
                     <h2 [style.color]="item.color">{{ item.title }}</h2>
                     <hr />
                     <p style="margin-bottom: 15px">{{ item.shorttext }}</p>
-                    <a href="javascript:void(0)" [routerLink]="item.route">
+                    <a [href]="item.route" target="_blank">
                       {{ item.cta1 }}
                       <i class="fa fa-arrow-right"></i>
                     </a>
@@ -49,6 +49,8 @@
     </div>
   </div>
 </section>
+
+<a href="/services/reclutamiento/" target="_blank">Reclutamiento</a>
 
 
 

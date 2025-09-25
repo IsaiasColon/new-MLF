@@ -1,0 +1,45 @@
+{
+  "slug": "padres-sanan-construyen-futuro-homenaje-medicos",
+  "title": "Padres que sanan y construyen futuro: homenaje a los médicos en Estados Unidos",
+  "description": "Un tributo especial a los médicos que combinan su vocación profesional con su rol como padres, construyendo un futuro mejor.",
+  "date": "2024-01-15",
+  "author": "Medical License Factory",
+  "featuredImage": "assets/mlf/img/posts/002.png",
+  "url": "https://medicalicensefactory.com/blog/padres-sanan-construyen-futuro-homenaje-medicos",
+  "content": {
+    "paragraphs": [
+      "Ser médico y padre al mismo tiempo es uno de los desafíos más nobles y complejos que una persona puede enfrentar.",
+      "Los médicos que son padres no solo cuidan de la salud de sus pacientes, sino que también moldean el futuro a través de la educación y el ejemplo que dan a sus hijos.",
+      "Este artículo es un homenaje a todos aquellos profesionales de la salud que equilibran con éxito su vocación médica con su responsabilidad parental."
+    ],
+    "lists": [
+      {
+        "type": "ul",
+        "items": [
+          "Gestión del tiempo entre consultas y familia",
+          "Educación médica en el hogar",
+          "Valores profesionales transmitidos a los hijos",
+          "Balance trabajo-vida personal",
+          "Legado profesional y familiar"
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": 2,
+        "text": "El Equilibrio Perfecto"
+      },
+      {
+        "level": 3,
+        "text": "Desafíos y Recompensas"
+      }
+    ],
+    "images": [
+      {
+        "src": "assets/mlf/img/posts/002.png",
+        "alt": "Médico con paciente"
+      }
+    ]
+  },
+  "extractedAt": "2025-09-25T13:56:32.903Z"
+}

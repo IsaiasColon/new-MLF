@@ -1,57 +1,174 @@
-<app-banner-with-title-partial
-  [title]="banner.title"
-  [image]="banner.image"
-></app-banner-with-title-partial>
+<!-- Banner Section -->
+<section class="blog-banner">
+  <div class="container">
+    <div class="banner-content">
+      <h1>Blog de Medical License Factory</h1>
+      <p>Recursos, consejos y guías para médicos que buscan licenciarse en Estados Unidos</p>
+    </div>
+  </div>
+</section>
 
-<!-- <app-blog-standard-one-partial></app-blog-standard-one-partial> -->
+<!-- Main Content -->
+<main class="blog-main">
+  <div class="container">
+    
+    <!-- Search and Filters -->
+    <div class="blog-filters">
+      <div class="search-section">
+        <div class="search-box">
+          <input 
+            type="text" 
+            placeholder="Buscar artículos..." 
+            [(ngModel)]="searchTerm"
+            (input)="onSearch($any($event.target).value)"
+            class="search-input">
+          <i class="search-icon">🔍</i>
+        </div>
+      </div>
+      
+      <div class="filters-section">
+        <div class="filter-group">
+          <label>Autor:</label>
+          <select 
+            [(ngModel)]="selectedAuthor" 
+            (change)="onAuthorFilter(selectedAuthor)"
+            class="filter-select">
+            <option value="">Todos los autores</option>
+            <option *ngFor="let author of authors" [value]="author">
+              {{ author }}
+            </option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label>Año:</label>
+          <select 
+            [(ngModel)]="selectedYear" 
+            (change)="onYearFilter(selectedYear)"
+            class="filter-select">
+            <option value="">Todos los años</option>
+            <option *ngFor="let year of years" [value]="year">
+              {{ year }}
+            </option>
+          </select>
+        </div>
+        
+        <button 
+          (click)="clearFilters()" 
+          class="clear-filters-btn"
+          *ngIf="searchTerm || selectedAuthor || selectedYear">
+          Limpiar filtros
+        </button>
+      </div>
+    </div>
 
-<!-- <div class="overlap-3">
-  <p class="p">
-    ¿Por qué cerca del 90 % de nuestros clientes obtienen éxito en la solicitud de su licencia médica?
-  </p>
-  <p class="text-wrapper-2">
-    En Medical License Factory tenemos un secreto que nos ha permitido que cerca del 90 % de nuestros clientes
-    obtenga un resultado exitoso en el proceso de solicitud de su licencia médica para ejercer en los Estados
-    Unidos.
-  </p>
-  <div class="group">
-    <div class="overlap-group-wrapper">
-      <div class="div-wrapper"><div class="text-wrapper-3">Saber más</div></div>
+    <!-- Loading State -->
+    <div *ngIf="loading" class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>Cargando artículos...</p>
+    </div>
+
+    <!-- Articles Grid -->
+    <div *ngIf="!loading" class="articles-section">
+      <div class="articles-header">
+        <h2>Artículos del Blog</h2>
+        <p class="articles-count">
+          {{ totalArticles }} artículo{{ totalArticles !== 1 ? 's' : '' }} encontrado{{ totalArticles !== 1 ? 's' : '' }}
+        </p>
+      </div>
+
+      <!-- No Results -->
+      <div *ngIf="filteredArticles.length === 0" class="no-results">
+        <div class="no-results-content">
+          <i class="no-results-icon">📝</i>
+          <h3>No se encontraron artículos</h3>
+          <p>Intenta ajustar tus filtros de búsqueda</p>
+          <button (click)="clearFilters()" class="btn-primary">
+            Ver todos los artículos
+          </button>
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div *ngIf="filteredArticles.length > 0" class="articles-grid">
+        <article 
+          *ngFor="let article of getPaginatedArticles()" 
+          class="article-card"
+          (click)="goToArticle(article)">
+          
+          <div class="article-image">
+            <img 
+              [src]="article.featuredImage || 'assets/mlf/img/posts/default.jpg'" 
+              [alt]="article.title"
+              loading="lazy">
+            <div class="article-overlay">
+              <span class="read-more">Leer más</span>
+            </div>
+          </div>
+          
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-date">{{ formatDate(article.date) }}</span>
+              <span class="article-author">{{ article.author }}</span>
+            </div>
+            
+            <h3 class="article-title">{{ article.title }}</h3>
+            <p class="article-description">
+              {{ getArticleExcerpt(article.description) }}
+            </p>
+            
+            <div class="article-footer">
+              <a [href]="article.url" target="_blank" class="original-link">
+                Ver artículo original
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div *ngIf="totalPages > 1" class="pagination">
+        <button 
+          (click)="goToPage(currentPage - 1)"
+          [disabled]="currentPage === 1"
+          class="pagination-btn prev">
+          ← Anterior
+        </button>
+        
+        <div class="pagination-numbers">
+          <button 
+            *ngFor="let page of getPageNumbers()"
+            (click)="goToPage(page)"
+            [class.active]="page === currentPage"
+            class="pagination-number">
+            {{ page }}
+          </button>
+        </div>
+        
+        <button 
+          (click)="goToPage(currentPage + 1)"
+          [disabled]="currentPage === totalPages"
+          class="pagination-btn next">
+          Siguiente →
+        </button>
+      </div>
     </div>
   </div>
-  <div class="rectangle-wrapper">
-    <img class="img" src="https://c.animaapp.com/mf607lezkh4mkj/img/rectangle-1.png" alt="" />
-  </div>
-  <div class="group-2">
-    <div class="img-wrapper">
-      <img class="img" src="https://c.animaapp.com/mf607lezkh4mkj/img/rectangle-2.png" alt="" />
-    </div>
-    <img class="rectangle-3" src="https://c.animaapp.com/mf607lezkh4mkj/img/rectangle-3.png" alt="" />
-  </div>
-</div>
-<p class="text-wrapper-4">
-  ¿Sabes qué licencia te corresponde? Conoce los tipos de licencia médica que puedes obtener en estados unidos
-</p>
-<p class="text-wrapper-5">La OMS identifica los 10 desafíos en la sanidad mundial para 2021</p>
-<p class="text-wrapper-6">
-  En el camino de obtener tu licencia médica para ejercer en los Estados Unidos, es importante que sepas cuáles
-  son los tipos de licencia a las que puedes optar.
-</p>
-<p class="la-organizaci-n">
-  La organización insta a los países de todo el mundo a &#34;actuar con rapidez&#34; para reparar sus sistemas
-  de salud.
-</p>
-<div class="group-wrapper">
-  <div class="overlap-group-wrapper">
-    <div class="div-wrapper">              
-      <div class="text-wrapper-3">Saber más</div>
+</main>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <h2>Mantente actualizado</h2>
+      <p>Recibe los últimos artículos y recursos directamente en tu correo</p>
+      <form class="newsletter-form">
+        <input 
+          type="email" 
+          placeholder="Tu correo electrónico" 
+          class="newsletter-input">
+        <button type="submit" class="newsletter-btn">Suscribirse</button>
+      </form>
     </div>
   </div>
-</div>
-<div class="group-3">
-  <div class="overlap-group-wrapper">
-    <div class="div-wrapper">
-      <div class="text-wrapper-3">Saber más</div>
-    </div>
-  </div>
-</div> -->
+</section>
