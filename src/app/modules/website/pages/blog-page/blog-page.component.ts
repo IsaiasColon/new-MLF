@@ -112,6 +112,29 @@ export class BlogPageComponent implements OnInit, OnDestroy {
     this.applyFilters();
   }
 
+  public clearSearch(): void {
+    this.searchTerm = '';
+    this.applyFilters();
+  }
+
+  public clearAuthorFilter(): void {
+    this.selectedAuthor = '';
+    this.applyFilters();
+  }
+
+  public clearYearFilter(): void {
+    this.selectedYear = '';
+    this.applyFilters();
+  }
+
+  public getActiveFiltersCount(): number {
+    let count = 0;
+    if (this.searchTerm.trim()) count++;
+    if (this.selectedAuthor) count++;
+    if (this.selectedYear) count++;
+    return count;
+  }
+
   private applyFilters(): void {
     let filtered = [...this.articles];
 

@@ -154,7 +154,8 @@ export class BlogDetailsPageComponent implements OnInit, OnDestroy {
       bookTitle: 'La Guía de Apoyo al Médico Inmigrante: El Camino a la Licencia Médica',
       availability: 'Disponible en Amazon.',
       linkText: 'Reserva tu copia aquí',
-      linkUrl: '#'
+      linkUrlAmazon: 'https://www.amazon.com/GU%C3%8DA-APOYO-AL-M%C3%89DICO-INMIGRANTE/dp/B0DYPSNW5W',
+      linkUrlMercadolibre: 'https://articulo.mercadolibre.com.mx/MLM-2302446803-guia-de-apoyo-al-medico-inmigrante-el-camino-a-la-licencia-_JM'
     },
     socialSharing: {
       title: 'Comparte este artículo:',
@@ -332,9 +333,11 @@ export class BlogDetailsPageComponent implements OnInit, OnDestroy {
         title: 'Recurso Recomendado',
         description: 'Te recomendamos el libro de Lila Waldero, CEO de Medical License Factory:',
         bookTitle: 'La Guía de Apoyo al Médico Inmigrante: El Camino a la Licencia Médica',
-        availability: 'Disponible en Amazon.',
+        availabilityAmazon: 'Disponible en Amazon.',
+        availabilityMercadolibre: 'Disponible en Mercado Libre.',
         linkText: 'Reserva tu copia aquí',
-        linkUrl: '#'
+        linkUrlAmazon: 'https://www.amazon.com/GU%C3%8DA-APOYO-AL-M%C3%89DICO-INMIGRANTE/dp/B0DYPSNW5W',
+        linkUrlMercadolibre: 'https://articulo.mercadolibre.com.mx/MLM-2302446803-guia-de-apoyo-al-medico-inmigrante-el-camino-a-la-licencia-_JM'
       },
       socialSharing: {
         title: 'Comparte este artículo:',

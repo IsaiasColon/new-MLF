@@ -15,7 +15,7 @@ import { HelpersService } from 'src/app/services/helpers.service';
   styleUrls: ['./header-partial.component.scss'],
 })
 export class HeaderPartialComponent implements OnInit, OnDestroy {
-  canLanguageSwitch: boolean = false;
+  canLanguageSwitch: boolean = true;
 
   public loading: boolean = false;
 

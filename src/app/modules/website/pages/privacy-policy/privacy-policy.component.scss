@@ -1,0 +1,36 @@
+// Blog Page Styles
+.blog-banner {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 100px;
+      height: 280px;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  
+    .banner-content {
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  
+        @media (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+  
+      p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+  

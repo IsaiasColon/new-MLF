@@ -168,6 +168,20 @@ const routes: Routes = [
             'src/app/modules/website/pages/our-projects-page/our-projects-page.module'
           ).then((m) => m.OurProjectsPageModule),
       },
+      {
+        path: 'terms-conditions',
+        loadChildren: () => 
+          import(
+            'src/app/modules/website/pages/terms-conditions/terms-conditions.module'
+          ).then((m) => m.TermsConditionsModule),
+      },
+      {
+        path: 'privacy-policy',
+        loadChildren: () => 
+          import(
+            'src/app/modules/website/pages/privacy-policy/privacy-policy.module'
+          ).then((m) => m.PrivacyPolicyModule),
+      },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
   },

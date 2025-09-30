@@ -48,40 +48,49 @@
                 <ng-container *ngIf="canLanguageSwitch">
 
                   <li *ngIf="currentLang === 'en'" class="dropdown">
-                  <a href="javascript:void(0)">
-                    ENG
-                    <span class="nav_arrow"></span></a>
-                  <ul class="sub-menu">
-                    <li class="dropdown">
-                      <a href="javascript:void(0)" (click)="setLang('es')">
-                        ESP
-                        <span class="nav_arrow"></span></a>
-                    </li>
-                  </ul>
-                </li>
+                    <a href="javascript:void(0)">
+                      ENG
+                      <span class="nav_arrow"></span></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" (click)="setLang('es')">
+                          ESP
+                          <span class="nav_arrow"></span></a>
+                      </li>
+                    </ul>
+                  </li>
 
-                <li *ngIf="currentLang === 'es'" class="dropdown">
-                  <a href="javascript:void(0)">
-                    ESP
-                    <span class="nav_arrow"></span></a>
-                  <ul class="sub-menu">
-                    <li class="dropdown">
-                      <a href="javascript:void(0)" (click)="setLang('en')">
-                        ENG
-                        <span class="nav_arrow"></span></a>
-                    </li>
-                  </ul>
-                </li>
+                  <li *ngIf="currentLang === 'es'" class="dropdown">
+                    <a href="javascript:void(0)">
+                      ESP
+                      <span class="nav_arrow"></span></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown">
+                        <a href="javascript:void(0)" (click)="setLang('en')">
+                          ENG
+                          <span class="nav_arrow"></span></a>
+                      </li>
+                    </ul>
+                  </li>
 
                 </ng-container>
-                
+
               </ul>
             </div>
             <div class="right">
               <div class="main-menu__right">
-                <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
-                  {{ "general.contact_us" | translate }}
-                </button>
+                <!-- <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
+                  Contáctanos 
+                </button> -->
+                <!-- <button class="btn btn-primary btn-contact">
+                  Programar una llamada            
+                </button> -->
+
+                <a href="https://calendly.com/comunicaciones-licenciasmedica/asesoria-en-licenciamiento-medico"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-contact">Programar una
+                  llamada</a>
+
+
               </div>
             </div>
           </div>
@@ -127,8 +136,7 @@
             </ul>
           </li> -->
           <li [ngClass]="!!item.child === true ? 'dropdown' : ''" *ngFor="let item of navigation">
-            <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span
-                class="nav_arrow"></span></a>
+            <a routerLink="{{ item.link }}" *ngIf="!!item.child">{{ item.linkText }}<span class="nav_arrow"></span></a>
             <a routerLink="{{ item.link }}" *ngIf="!item.child">{{
               item.linkText
               }}</a>
@@ -156,37 +164,46 @@
 
           <ng-container *ngIf="canLanguageSwitch">
             <li *ngIf="currentLang === 'en'" class="dropdown">
-            <a href="javascript:void(0)">
-              ENG
-              <span class="nav_arrow"></span></a>
-            <ul class="sub-menu">
-              <li class="dropdown">
-                <a href="javascript:void(0)" (click)="setLang('es')">
-                  ESP
-                  <span class="nav_arrow"></span></a>
-              </li>
-            </ul>
-          </li>
+              <a href="javascript:void(0)">
+                ENG
+                <span class="nav_arrow"></span></a>
+              <ul class="sub-menu">
+                <li class="dropdown">
+                  <a href="javascript:void(0)" (click)="setLang('es')">
+                    ESP
+                    <span class="nav_arrow"></span></a>
+                </li>
+              </ul>
+            </li>
 
-          <li *ngIf="currentLang === 'es'" class="dropdown">
-            <a href="javascript:void(0)">
-              ESP
-              <span class="nav_arrow"></span></a>
-            <ul class="sub-menu">
-              <li class="dropdown">
-                <a href="javascript:void(0)" (click)="setLang('en')">
-                  ENG
-                  <span class="nav_arrow"></span></a>
-              </li>
-            </ul>
-          </li>
+            <li *ngIf="currentLang === 'es'" class="dropdown">
+              <a href="javascript:void(0)">
+                ESP
+                <span class="nav_arrow"></span></a>
+              <ul class="sub-menu">
+                <li class="dropdown">
+                  <a href="javascript:void(0)" (click)="setLang('en')">
+                    ENG
+                    <span class="nav_arrow"></span></a>
+                </li>
+              </ul>
+            </li>
           </ng-container>
-          
+
         </ul>
         <div class="main-menu__right mx-5">
-          <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
-            {{ "general.contact_us" | translate }}
-          </button>
+          <!-- <button [routerLink]="['/contact-us']" class="btn btn-primary btn-contact">
+            Contáctanos 
+          </button> -->
+          <!-- <button class="btn btn-primary btn-contact">
+            Programar una llamada            
+          </button> -->
+
+          <a href="https://calendly.com/comunicaciones-licenciasmedica/asesoria-en-licenciamiento-medico"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-contact">
+            Programar una llamada
+          </a>
+
         </div>
       </div>
     </div>

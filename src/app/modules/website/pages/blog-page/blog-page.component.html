@@ -12,55 +12,7 @@
 <main class="blog-main">
   <div class="container">
     
-    <!-- Search and Filters -->
-    <div class="blog-filters">
-      <div class="search-section">
-        <div class="search-box">
-          <input 
-            type="text" 
-            placeholder="Buscar artículos..." 
-            [(ngModel)]="searchTerm"
-            (input)="onSearch($any($event.target).value)"
-            class="search-input">
-          <i class="search-icon">🔍</i>
-        </div>
-      </div>
-      
-      <div class="filters-section">
-        <div class="filter-group">
-          <label>Autor:</label>
-          <select 
-            [(ngModel)]="selectedAuthor" 
-            (change)="onAuthorFilter(selectedAuthor)"
-            class="filter-select">
-            <option value="">Todos los autores</option>
-            <option *ngFor="let author of authors" [value]="author">
-              {{ author }}
-            </option>
-          </select>
-        </div>
-        
-        <div class="filter-group">
-          <label>Año:</label>
-          <select 
-            [(ngModel)]="selectedYear" 
-            (change)="onYearFilter(selectedYear)"
-            class="filter-select">
-            <option value="">Todos los años</option>
-            <option *ngFor="let year of years" [value]="year">
-              {{ year }}
-            </option>
-          </select>
-        </div>
-        
-        <button 
-          (click)="clearFilters()" 
-          class="clear-filters-btn"
-          *ngIf="searchTerm || selectedAuthor || selectedYear">
-          Limpiar filtros
-        </button>
-      </div>
-    </div>
+    
 
     <!-- Loading State -->
     <div *ngIf="loading" class="loading-state">
@@ -118,9 +70,9 @@
             </p>
             
             <div class="article-footer">
-              <a [href]="article.url" target="_blank" class="original-link">
+              <!-- <a [href]="article.url" target="_blank" class="original-link">
                 Ver artículo original
-              </a>
+              </a> -->
             </div>
           </div>
         </article>

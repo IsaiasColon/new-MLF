@@ -56,7 +56,10 @@
               <h3>{{ data.bookPromotion.title }}</h3>
               <p>{{ data.bookPromotion.description }}</p>
               <p><strong>"{{ data.bookPromotion.bookTitle }}"</strong></p>
-              <p>{{ data.bookPromotion.availability }} <a [href]="data.bookPromotion.linkUrl" class="book-link">{{ data.bookPromotion.linkText }}</a></p>
+              <p>{{ data.bookPromotion.availabilityAmazon }} 
+                <a [href]="data.bookPromotion.linkUrlAmazon" class="book-link" target="_blank">{{ data.bookPromotion.linkText }}</a></p>
+                <p>{{ data.bookPromotion.availabilityMercadolibre }} 
+                    <a [href]="data.bookPromotion.linkUrlMercadolibre" class="book-link" target="_blank">{{ data.bookPromotion.linkText }}</a></p>
           </div>
 
           <!-- SOCIAL SHARING -->
